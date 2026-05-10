@@ -19,5 +19,5 @@ Einhaltung grundlegender WCAG-Standards, um einen diskriminierungsfreien Zugang 
 
 
 Die Webseite soll durch eine minimalistische Darstellung überzeugen, die die Inhalte klar strukturiert und eine intuitive Benutzerführung durch eine Sprungmarken-Navigation (Anker-Links) ermöglicht.
-Zu Beginn wird die Webseite aus vier Bereichen bestehen. Diese sollen im weiteren Verlauf erweitert und ausgebaut werden. Die vier Abschnitte der Webseite gliedern sich in Home, Über mich, Hobbys sowie Kontakt inklusive Social-Media-Links.
+Zu Beginn wird die Webseite aus vier Bereichen bestehen. Diese sollen im weiteren Verlauf erweitert und ausgebaut werden. Die vier Abschnitte der Webseite gliedern sich in Home, Über mich, Interessen sowie Kontakt inklusive Social-Media-Links.
 Die Navigation wird zentral im Header-Bereich positioniert, um eine übersichtliche und benutzerfreundliche Bedienung zu gewährleisten.
