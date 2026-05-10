@@ -2,7 +2,7 @@ Projekt:Web-Progammieren || Portfolie || Timotheus Beirer
 
 Projekt und Ziel
 
-Ziel dieses Projekts ist die Erstellung einer digitalen Visitenkarte als moderner Onepager. Die Webseite dient der persönlichen Repräsentation im beruflichen Umfeld. Gleichzeitig soll das Projekt dazu beitragen, die eigenen Fähigkeiten im Umgang mit HTML und CSS zu trainieren und zu vertiefen. Durch den sauberen technischen Aufbau soll diese Seite im weiteren Verlauf für den zukünftigen beruflichen Weg genutzt und bei Bedarf stetig erweitert werden.
+Ziel dieses Projekts ist die Erstellung einer digitalen Visitenkarte als moderner Onepager. Die Webseite dient der persönlichen Repräsentation und im beruflichen Umfeld. Gleichzeitig soll das Projekt dazu beitragen, die eigenen Fähigkeiten im Umgang mit HTML und CSS zu trainieren und zu vertiefen. Durch den sauberen technischen Aufbau soll diese Seite im weiteren Verlauf für den zukünftigen beruflichen Weg genutzt und bei Bedarf stetig erweitert werden.
 
 Kernziele des Projekts:
 
