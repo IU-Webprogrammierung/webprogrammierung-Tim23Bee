@@ -1,4 +1,4 @@
-Projekt:Web-Progammieren || Portfolie || Timotheus Beirer
+Projekt:Web-Progammieren || Portfolio || Timotheus Beirer
 
 Projekt und Ziel
 
