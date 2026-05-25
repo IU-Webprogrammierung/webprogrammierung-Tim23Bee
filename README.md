@@ -82,4 +82,4 @@
 
 <p>Die gesamte Versionsverwaltung, Protokollierung des Entwicklungsfortschritts und die Bereitstellung der Live-Vorschau erfolgen kontinuierlich über Git und GitHub.</p>
 
-<p><h1>Im Laufe des Projeltes können änderungen voegenommen werden!</h1></p>
+<p><h1>Im Laufe des Projekts können Änderungen vorgenommen werden!</h1></p>
