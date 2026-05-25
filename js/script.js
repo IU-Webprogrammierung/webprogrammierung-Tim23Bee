@@ -8,7 +8,7 @@ if (currentHour >= 5 && currentHour < 12) {
     Begruessung = "Guten Morgen!";
 } else if (currentHour >= 12 && currentHour < 18) {
     Begruessung = "Ciao!";
-} else if (currentHour >= 18 && currentHour < 23) {
+} else if (currentHour >= 18 && currentHour < 24) {
     Begruessung = "Gute Abend!";
 }
 
