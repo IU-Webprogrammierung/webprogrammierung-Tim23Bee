@@ -7,14 +7,14 @@ let Begruessung = "Ciao!"; // Standardbegrüßung
 if (currentHour >= 5 && currentHour < 12) {
     Begruessung = "Guten Morgen!";
 } else if (currentHour >= 12 && currentHour < 18) {
-    Begruessung = "Guten Tag!";
+    Begruessung = "Ciao!";
 } else if (currentHour >= 18 && currentHour < 23) {
     Begruessung = "Gute Abend!";
 }
 
 // Tipp_Effekt
 if (document.getElementById('greeting-typewriter')) {
-    new Typed('#greeting-typewirter', {
+    new Typed('#greeting-typewriter', {
         strings: [Begruessung],
         typeSpeed: 80,
         showCursor: true,
@@ -23,3 +23,4 @@ if (document.getElementById('greeting-typewriter')) {
     });     
 }
 
+});
