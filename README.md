@@ -72,7 +72,7 @@
 
 <hr />
 
-## 📁 Projektorganisation
+## Projektorganisation
 <ul>
     <p><li><strong>index.html:</strong> Die zentrale Startseite des Webauftritts (Home-Bereich).</li></p>
     <p><li><strong>Unterseiten:</strong> Separate HTML-Dateien für die Bereiche ueber-mich.html, interessen.html, projekte.html und kontakt.html.</li></p>
