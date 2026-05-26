@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded',() => {
 
-// index.html Begrüßung nach Zeit des Tages// 
+// =============================================== //  
+// /index.html Begrüßung nach Zeit des Tages// 
+
 const currentHour = new Date().getHours();
 let Begruessung = "Ciao!"; // Standardbegrüßung
 
@@ -12,7 +14,8 @@ if (currentHour >= 5 && currentHour < 12) {
     Begruessung = "Gute Abend!";
 }
 
-// index.html Tipp_Effekt // 
+// /index.html Tipp_Effekt // 
+
 if (document.getElementById('greeting-typewriter')) {
     new Typed('#greeting-typewriter', {
         strings: [Begruessung],
@@ -24,3 +27,10 @@ if (document.getElementById('greeting-typewriter')) {
 }
 
 });
+
+// =============================================== //
+
+
+//=============================================== //
+// /about.html Tipp_Effekt //
+
