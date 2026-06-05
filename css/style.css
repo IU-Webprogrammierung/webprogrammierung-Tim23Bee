@@ -1,14 +1,74 @@
 body {
     display: grid;
-
     grid-template-rows: auto 1fr auto;
-
-    min-height: 100vh;
-
-    margin:0;
-
+    min-height: 120vh;
+    margin: 0;
     background-color: #0F0F1B;
     color: #F1F1F3;
+  font-family: "Inter", sans-serif;
+}
 
-    font-family: urbanist, sans-serif;;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Urbanist", sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 25px 40px;
+    width: 100%;
+    border-bottom: 2px solid #FFC224;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 60px;           
+    align-items: center; 
+}
+
+.navbar a {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F1F1F3;             
+    text-decoration: none;      
+    transition: color 0.3s ease; 
+    white-space: nowrap;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 0;
+    height: 2px;
+    background-color: #D0C3F4; 
+    transition: width 0.3s ease; 
+}
+
+.navbar a:hover::after {
+    width: 100%; 
+}
+
+/* Logo-Animation */
+.logo a img {
+    transition: transform 0.5s ease;
+}
+
+.logo a img:hover {
+    transform: scale(1.07) rotate(3deg);
+}
+
+.navbar a:hover {
+    color: #D0C3F4;             
 }
