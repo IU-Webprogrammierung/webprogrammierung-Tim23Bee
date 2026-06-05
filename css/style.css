@@ -1,15 +1,14 @@
 body {
     display: grid;
+
     grid-template-rows: auto 1fr auto;
+
     min-height: 100vh;
+
     margin:0;
+
     background-color: #0F0F1B;
     color: #F1F1F3;
-    font-family: url(../fonts/Inter/static/Inter_24pt-Medium.ttf);
 
-
-    background-color: #0F0F1B;
-    font-family: Urbanist, sans-serif;
-    color: #AA92E8;
-    margin: 30px;
+    font-family: urbanist, sans-serif;;
 }
