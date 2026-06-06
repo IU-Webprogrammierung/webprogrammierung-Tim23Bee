@@ -88,3 +88,17 @@ header {
     align-items: center;
     gap: 60px;
 }
+
+.hero-image-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    width: 100%;
+    margin-left: auto;
+
+    border-radius: 40px;
+    padding:12px;
+    background: linear-gradient(135deg, #D0C3F4, #FFC224);
+    box-shadow: 0 0 30px rgba(208, 195, 244, 0.2);
+}
