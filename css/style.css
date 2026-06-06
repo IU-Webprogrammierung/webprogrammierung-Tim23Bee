@@ -17,7 +17,7 @@ h6 {
     font-family: "Urbanist", sans-serif;
 }
 
-                   /* Header */
+            /* Header */
 header {
     display: flex;
     justify-content: space-between; 
@@ -60,7 +60,7 @@ header {
     width: 100%; 
 }
 
-                    /* Logo-Animation */
+            /* Logo-Animation */
 .logo a img {
     transition: transform 0.5s ease;
 }
@@ -73,11 +73,11 @@ header {
     color: #D0C3F4;             
 }
 
-                    /* Haupt- & Hero Layout */
+            /* Haupt- & Hero Layout */
 .hero-container {
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto; 
+    margin: 0% auto; 
     padding: 100px;
     box-sizing:border-box;
 }
@@ -99,8 +99,15 @@ header {
     margin-right: -20px;
 }
 
+                /* Zahl in der navbar dauerhaft lila*/
    
-   
+  .navbar a .nav-number {
+    color:#D0C3F4;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+
 
     
 
