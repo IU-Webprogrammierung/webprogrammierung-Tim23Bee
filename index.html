@@ -16,43 +16,39 @@
 <body>
 
     <!-- Header mit Logo und Navigation -->
-    <header>
-
+    <header class="main-header">
     </header>
 
 
     <!-- Hauptinhalt -->
-    <main>
+    <main class="hero-container">
 
-        <!-- Home Section -->
-        <section id="home">
-            <h1><span id="greeting-typewriter"></span></h1>
-        </section>
+        <section id="hero-section">
 
+            <div class="hero-text">
+                <h1><span id="greeting-typewriter" class="typewriter"></span></h1>
 
-        <!-- Name / Vorstellung -->
-        <section id="name">
-
-            <!-- intro-text gruppiert Text -->
-            <div class="intro-text">
                 <p class="intro-lead">Ich bin:</p>
                 <h2>TIMOTHEUS BEIRER</h2>
 
-
-                <p>Im Moment studiere ich UX-Design an
-                    der IU Internationale Hochschule.
+                <p class="hero-description">
+                    Im Moment studiere ich UX-Design an der IU Internationale Hochschule.
                 </p>
 
-                <div class="cta-container">
+
+                <nav class="cta-container">
                     <a href="projekte.html" class="btn-primary">Projekte</a>
                     <a href="kontakt.html" class="btn-secondary">Kontakt</a>
-                </div>
+                </nav>
             </div>
+
+
             <!-- Profilbild -->
-            <img src="images/mein_profil_foto.jpg" alt="Portrait von Timotheus Beirer" style="width: 300px;">
-
-
-
+             <div class="hero-image-card">  
+            <img src="images/mein_profil_foto.jpg" alt="Portrait von Timotheus Beirer" class="hero-image"
+                style="width: 300px;">
+            </div>
+            
         </section>
 
     </main>

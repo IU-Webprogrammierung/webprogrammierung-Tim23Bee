@@ -17,7 +17,7 @@ h6 {
     font-family: "Urbanist", sans-serif;
 }
 
-/* Header */
+                   /* Header */
 header {
     display: flex;
     justify-content: space-between; 
@@ -60,7 +60,7 @@ header {
     width: 100%; 
 }
 
-/* Logo-Animation */
+                    /* Logo-Animation */
 .logo a img {
     transition: transform 0.5s ease;
 }
@@ -71,4 +71,20 @@ header {
 
 .navbar a:hover {
     color: #D0C3F4;             
+}
+
+                    /* Haupt- & Hero Layout */
+.hero-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto; 
+    padding: 100px;
+    box-sizing:border-box;
+}
+
+#hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
