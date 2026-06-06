@@ -93,16 +93,33 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 460px;
+    max-width: 500px;
     width: 100%;
     margin-left: auto;
-    margin-right: -20px;
+    margin-right: -40px;
 }
 
-                /* Zahl in der navbar dauerhaft lila*/
-   
-  .navbar a .nav-number {
-    color:#D0C3F4;
+.typewriter {
+    font-size:48px;
+    font-weight: 300;
+    color: #F1F1F3;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.main-title {
+    font-family: "Urbanist", sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #D0C3F4;
+    margin: 0 0 20px 0; 
+    letter-spacing: -1px;
+}
+
+/* Zahl in der navbar dauerhaft lila */
+.navbar a .nav-number {
+    color: #D0C3F4;
     margin-right: 8px;
     transition: color 0.3s ease;
 }
