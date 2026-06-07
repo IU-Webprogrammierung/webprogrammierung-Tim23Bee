@@ -30,8 +30,15 @@ header {
 
 .navbar {
     display: flex;
-    gap: 80px;           
+    gap: 40px;           
     align-items: center; 
+}
+
+/* Zahl in der navbar dauerhaft lila bleibt */
+.navbar a .nav-number {
+    color: #D0C3F4;
+    margin-right: 3px;
+    transition: color 0.3s ease;
 }
 
 .navbar a {
@@ -153,12 +160,7 @@ header {
     letter-spacing: 7px;
 }
 
-/* Zahl in der navbar dauerhaft lila bleibt */
-.navbar a .nav-number {
-    color: #D0C3F4;
-    margin-right: 8px;
-    transition: color 0.3s ease;
-}
+
 
 
 
