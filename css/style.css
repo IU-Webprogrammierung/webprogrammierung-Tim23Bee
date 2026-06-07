@@ -82,6 +82,26 @@ header {
     box-sizing:border-box;
 }
 
+           /* ich bin: */
+.intro-lead {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    color: #F1F1F3; 
+    margin: 0 0 20px 0;
+}
+
+           /* hero_satz */
+.hero-description {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #F1F1F3; 
+    margin: 0 0 40px 0;
+    font-weight:400 !important;    
+}
+
 #hero-section {
     display: flex;
     justify-content: space-between;
@@ -100,21 +120,24 @@ header {
 }
 
 .typewriter {
-    font-size:48px;
+    font-size: 60px;
     font-weight: 300;
     color: #F1F1F3;
     display: inline-block;
     margin-bottom: 5px;
 }
 
+
+
+            /* Haupttitle mein Name */
 .main-title {
     font-family: "Urbanist", sans-serif;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 1.1;
     color: #D0C3F4;
     margin: 0 0 20px 0; 
-    letter-spacing: -1px;
+    letter-spacing: 7px;
 }
 
 /* Zahl in der navbar dauerhaft lila */

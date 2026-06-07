@@ -19,13 +19,12 @@ if (currentHour >= 5 && currentHour < 12) {
 if (document.getElementById('greeting-typewriter')) {
     new Typed('#greeting-typewriter', {
         strings: [Begruessung],
-        typeSpeed: 80,
+        typeSpeed: 130,
         showCursor: true,
         cursorChar: '|',
         loop: false 
     });     
 }
-
 });
 
 // =============================================== //
