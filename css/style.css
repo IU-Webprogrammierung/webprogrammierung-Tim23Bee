@@ -27,6 +27,14 @@ header {
     border-bottom: 2px solid #FFC224;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 25px 40px;
+    width: 100%;
+    border-bottom: 2px solid #FFC224;
+}
 
 .navbar {
     display: flex;
@@ -85,7 +93,7 @@ header {
     width: 100%;
     max-width: 1400px;
     margin: 0% auto; 
-    padding: 80px 40px;
+    padding: 80px 20px;
     box-sizing:border-box;
 }
 
@@ -131,7 +139,7 @@ header {
     max-width: 500px;
     width: 100%;
     margin-left: auto;
-    margin-right: -40px;
+    margin-right: 0px;
 }
 
 .typewriter {
