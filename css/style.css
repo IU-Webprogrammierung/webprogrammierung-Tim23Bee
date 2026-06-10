@@ -1,19 +1,14 @@
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 120vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #0F0F1B;
     color: #F1F1F3;
   font-family: "Inter", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Urbanist", sans-serif;
 }
 
@@ -27,27 +22,19 @@ header {
     border-bottom: 2px solid #FFC224;
 }
 
-            /* Footer */
-footer {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;            
-    padding: 25px 40px;
-    width: 100%;
-    border-bottom: 2px solid #FFC224;
+            /* Logo-Animation */
+.logo img {
+    transition: transform 0.5s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.07) rotate(3deg);
 }
 
 .navbar {
     display: flex;
     gap: 40px;           
     align-items: center; 
-}
-
-/* Zahl in der navbar dauerhaft lila bleibt */
-.navbar a .nav-number {
-    color: #D0C3F4;
-    margin-right: 3px;
-    transition: color 0.3s ease;
 }
 
 .navbar a {
@@ -59,6 +46,17 @@ footer {
     transition: color 0.3s ease; 
     white-space: nowrap;
     position: relative;
+}
+
+           /* Zahl in der navbar dauerhaft lila bleibt */
+.navbar a .nav-number {
+    color: #D0C3F4;
+    margin-right: 3px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #D0C3F4;             
 }
 
 .navbar a::after {
@@ -75,20 +73,6 @@ footer {
 .navbar a:hover::after {
     width: 100%; 
 }
-
-            /* Logo-Animation */
-.logo a img {
-    transition: transform 0.5s ease;
-}
-
-.logo a img:hover {
-    transform: scale(1.07) rotate(3deg);
-}
-
-.navbar a:hover {
-    color: #D0C3F4;             
-}
-
             /* Haupt- & Hero Layout */
 .hero-container {
     width: 100%;
@@ -98,13 +82,13 @@ footer {
     box-sizing:border-box;
 }
 
-            
-/* Hero section layout */
+
+            /* Hero section layout */
 #hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 150px;
 }
 
            /* ich bin: */
@@ -117,33 +101,18 @@ footer {
     margin: 0 0 20px 0;
 }
 
-           /* hero_satz */
-.hero-description {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 1.6;
-    color: #F1F1F3;
-    margin: 0 0 40px 0;
-    font-weight: 400;
-    max-width: 650px;
+
+            /* Haupttitle mein Name */
+.main-title {
+    font-family: "Urbanist", sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #D0C3F4;
+    margin: 0 0 20px 0; 
+    letter-spacing: 7px;
 }
 
-#hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 200px;
-}
-
-.hero-image-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 500px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: 0px;
-}
 
 .typewriter {
     font-size: 60px;
@@ -160,19 +129,40 @@ footer {
     vertical-align:super;
 }
 
-            /* Haupttitle mein Name */
-.main-title {
-    font-family: "Urbanist", sans-serif;
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 1.1;
-    color: #D0C3F4;
-    margin: 0 0 20px 0; 
-    letter-spacing: 7px;
+
+           /* hero_satz */
+.hero-description {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #F1F1F3;
+    margin: 0 0 40px 0;
+    font-weight: 400;
+    max-width: 650px;
+}
+
+
+.hero-image-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0px;
 }
 
 
 
+            /* Footer */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 25px 40px;
+    width: 100%;
+    border-bottom: 2px solid #FFC224;
+}
 
 
     
