@@ -84,7 +84,7 @@ header {
 /* Haupt- & Hero Layout */
 .hero-container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 100%px;
     margin: 0%;
     padding: 40px 60px;
     box-sizing: border-box;
@@ -99,7 +99,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 200px;
     width: 100%
 }
 
@@ -160,7 +160,7 @@ header {
     justify-content: center;
     max-width: 500px;
     width: 100%;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: 0;
 }
 
