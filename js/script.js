@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded',() => {
-
 // =============================================== //  
 // /index.html Begrüßung nach Zeit des Tages// 
 
@@ -25,7 +23,6 @@ if (document.getElementById('greeting-typewriter')) {
         loop: false 
     });     
 }
-});
 
 // =============================================== //
 

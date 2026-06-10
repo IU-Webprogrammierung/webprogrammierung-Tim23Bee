@@ -27,6 +27,7 @@ header {
     border-bottom: 2px solid #FFC224;
 }
 
+            /* Footer */
 footer {
     display: flex;
     justify-content: space-between; 
@@ -98,11 +99,12 @@ footer {
 }
 
             
+/* Hero section layout */
 #hero-section {
-    display:flex;
-    justify-self: space-between;
-    align-items: center
-    gap 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 }
 
            /* ich bin: */
@@ -120,9 +122,10 @@ footer {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 1.6;
-    color: #F1F1F3; 
+    color: #F1F1F3;
     margin: 0 0 40px 0;
-    font-weight:400     
+    font-weight: 400;
+    max-width: 650px;
 }
 
 #hero-section {
