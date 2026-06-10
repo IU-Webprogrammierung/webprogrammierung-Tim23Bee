@@ -220,17 +220,18 @@ header {
 /* Footer */
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 25px 40px;
     width: 100%;
     border-top: 2px solid #FFC224;
+    box-sizing:border-box
 }
 
 footer small {
     display: block;
-    margin-top: 20px;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     color: #F1F1F3;
+    margin-top: 0;
 }
