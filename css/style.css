@@ -2,27 +2,35 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    max-height: 100vh;
     margin: 0;
     background-color: #0F0F1B;
     color: #F1F1F3;
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Urbanist", sans-serif;
 }
 
-            /* Header */
+/* Header */
 header {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;            
+    justify-content: space-between;
+    align-items: center;
     padding: 25px 40px;
     width: 100%;
     border-bottom: 2px solid #FFC224;
 }
 
-            /* Logo-Animation */
+/* Logo-Animation */
 .logo img {
     transition: transform 0.5s ease;
 }
@@ -33,22 +41,22 @@ header {
 
 .navbar {
     display: flex;
-    gap: 40px;           
-    align-items: center; 
+    gap: 40px;
+    align-items: center;
 }
 
 .navbar a {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #F1F1F3;             
-    text-decoration: none;      
-    transition: color 0.3s ease; 
+    color: #F1F1F3;
+    text-decoration: none;
+    transition: color 0.3s ease;
     white-space: nowrap;
     position: relative;
 }
 
-           /* Zahl in der navbar dauerhaft lila bleibt */
+/* Zahl in der navbar dauerhaft lila bleibt */
 .navbar a .nav-number {
     color: #D0C3F4;
     margin-right: 3px;
@@ -56,7 +64,7 @@ header {
 }
 
 .navbar a:hover {
-    color: #D0C3F4;             
+    color: #D0C3F4;
 }
 
 .navbar a::after {
@@ -66,50 +74,55 @@ header {
     left: 0px;
     width: 0;
     height: 2px;
-    background-color: #D0C3F4; 
-    transition: width 0.3s ease; 
+    background-color: #D0C3F4;
+    transition: width 0.3s ease;
 }
 
 .navbar a:hover::after {
-    width: 100%; 
+    width: 100%;
 }
-            /* Haupt- & Hero Layout */
+
+/* Haupt- & Hero Layout */
 .hero-container {
     width: 100%;
     max-width: 1400px;
-    margin: 0% auto; 
-    padding: 80px 20px;
-    box-sizing:border-box;
+    margin: 0% auto;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+    height:100%
 }
 
 
-            /* Hero section layout */
+/* Hero section layout */
 #hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 150px;
+    gap: 80px;
+    width: 100%
 }
 
-           /* ich bin: */
+/* ich bin: */
 .intro-lead {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 2px;
-    color: #F1F1F3; 
+    color: #F1F1F3;
     margin: 0 0 20px 0;
 }
 
 
-            /* Haupttitle mein Name */
+/* Haupttitle mein Name */
 .main-title {
     font-family: "Urbanist", sans-serif;
     font-size: 60px;
     font-weight: 800;
     line-height: 1.1;
     color: #D0C3F4;
-    margin: 0 0 20px 0; 
+    margin: 0 0 20px 0;
     letter-spacing: 7px;
 }
 
@@ -122,15 +135,15 @@ header {
     margin-bottom: 5px;
 }
 
-            /* Cursor-Animation */
+/* Cursor-Animation */
 .typed-cursor {
     font-size: 50px;
     font-weight: 300;
-    vertical-align:super;
+    vertical-align: super;
 }
 
 
-           /* hero_satz */
+/* hero_satz */
 .hero-description {
     font-family: "Inter", sans-serif;
     font-size: 20px;
@@ -152,18 +165,64 @@ header {
     margin-right: 0px;
 }
 
+              /*Buttons*/
 
+.hero-buttons {
+    display: flex;
+    gap: 40px;
+    margin-top: 55px;
+}
 
-            /* Footer */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight:700;
+    color:#0F0F1B;
+    background-color: #FFC224;
+    text-decoration:none;
+    padding: 15px 40px; 
+    border-radius: 100px;
+    border: 2px solid #FFC224;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #D0C3F4;
+    border-color: #D0C3F4;
+    color: #0F0F1B;
+}
+
+.btn-secondary {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight:700;
+    color:#F1F1F3;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    border: 2px solid #F1F1F3;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-secondary:hover {
+    border-color:#FFC224;
+    color: #FFC224;
+    background-color: rgba(248, 167, 45, 0.1);
+}
+
+/* Footer */
 footer {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;            
+    justify-content: space-between;
+    align-items: center;
     padding: 25px 40px;
     width: 100%;
     border-bottom: 2px solid #FFC224;
+    box-sizing: border-box;
 }
-
-
-    
-
