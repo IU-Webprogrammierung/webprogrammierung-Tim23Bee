@@ -2,7 +2,6 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    max-height: 100vh;
     margin: 0;
     background-color: #0F0F1B;
     color: #F1F1F3;
@@ -165,12 +164,12 @@ header {
     margin-right: 0px;
 }
 
-              /*Buttons*/
+              /*Button-1-Projekt & Effekt*/
 
-.hero-buttons {
+.cta-container {
     display: flex;
     gap: 40px;
-    margin-top: 55px;
+    margin-top: 40px;
 }
 
 .btn-primary {
@@ -195,6 +194,8 @@ header {
     color: #0F0F1B;
 }
 
+
+             /*Button-2-Kontakt & Effekt*/
 .btn-secondary {
     display: inline-block;
     font-family: "Inter", sans-serif;
@@ -223,6 +224,13 @@ footer {
     align-items: center;
     padding: 25px 40px;
     width: 100%;
-    border-bottom: 2px solid #FFC224;
-    box-sizing: border-box;
+    border-top: 2px solid #FFC224;
+}
+
+footer small {
+    display: block;
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #F1F1F3;
 }
