@@ -22,6 +22,7 @@ h6 {
 /*          Hauotseite.               */
 /* ================================== */
 
+
 /* Header */
 header {
     display: flex;
@@ -30,6 +31,7 @@ header {
     padding: 25px 60px 25px 40px;
     border-bottom: 2px solid #FFC224;
 }
+
 
 /* Logo-Animation */
 .logo img {
@@ -56,6 +58,7 @@ header {
     white-space: nowrap;
     position: relative;
 }
+
 
 /* Zahl in der navbar dauerhaft lila bleibt */
 .navbar a .nav-number {
@@ -97,6 +100,7 @@ header {
     border-color: #FFC224;
 }
 
+
 /* Haupt- & Hero Layout */
 .hero-container {
     width: 100%;
@@ -120,6 +124,7 @@ header {
     gap: 200px;
     width: 100%;
 }
+
 
 /* ich bin: */
 .intro-lead {
@@ -277,6 +282,7 @@ main {
 
 #ueber-mich-intro {
     margin-bottom: 60px;
+    text-align: center;
 }
 
 #ueber-mich-intro h1 {
@@ -300,14 +306,14 @@ main {
 
 #fakten {
     display: flex;
-    gap: 40px;
-    margin-bottom: 80px;
+    gap: 100px;
+    margin-bottom: 90px;
 }
 
 .fakten-box{
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 2px solid #FFC224;
+    flex: 6;
+    background-color: rgba(200, 200, 200, 0.09);
+    border: 1.5px solid #FFC224;
     border-radius: 30px 40px;
     padding: 30px 40px;
     font-style: normal;
@@ -318,7 +324,7 @@ main {
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     color: #F1F1F3;
-    margin: 0 0 15px 0;
+    margin: 0 0 25px 0;
 }
 
 .fakt-highlight {
@@ -351,6 +357,10 @@ main {
     color: #F1F1F3;
     margin-bottom: 20px;
     font-weight: 400;
+}
+
+#about .cta-container{
+    justify-content: center;
 }
 
 
