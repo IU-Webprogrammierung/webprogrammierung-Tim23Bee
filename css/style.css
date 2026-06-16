@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px 60px 25px 40px;
-    border-bottom: 2px solid #FFC224;
+    border-bottom: 1px solid #FFC224;
 }
 
 
@@ -247,7 +247,7 @@ footer {
     align-items: center;
     padding: 25px 40px;
     width: 100%;
-    border-top: 2px solid #FFC224;
+    border-top: 1px solid #FFC224;
     box-sizing: border-box;
 }
 
@@ -369,7 +369,7 @@ main {
 #ziel {
     text-align: center;
     padding: 60px 40px;
-    border-top: 2px solid #FFC224;
+    border-top: 1px solid #FFC224;
     margin: 0 -40px -80px -40px;
 }
 
@@ -380,4 +380,68 @@ main {
     color: #FFC224;
     margin: 0;
     letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+/* ============================== */
+/* Interessen-Seite                */
+/* ============================== */
+
+#interessen-intro {
+    margin: bottom 60px;
+}
+
+#interessen-intro h1 {
+    font-size:48px;
+    font-weight: 800;
+    color: #F1F1F3;
+    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
+#interessen-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 700px;
+}
+
+.interessen-box {
+    border-radius:20px;
+    padding: 30px 40 px
+}
+
+.interessen-box h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin:0 0  15px 0;
+
+}
+
+.interessen-box p {
+    font-size: 18px;
+    line-height:1.7;
+    margin: 0;
+    font-weight:400;
+}
+
+.box-lila {
+    background-color: #D0C3F4;
+    color: #0F0F1B;
+}
+
+.box-gelb {
+    background-color: #FFC224;
+    color: #0F0F1B;
+}
+
+.box-outline {
+    background-color: transparent;
+    border: 2px solid #F1F1F3;
+    color: #F1F1F3;
 }
