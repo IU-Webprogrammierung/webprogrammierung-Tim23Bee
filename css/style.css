@@ -360,6 +360,11 @@ main {
 }
 
 #about .cta-container{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
     justify-content: center;
 }
 
@@ -393,11 +398,12 @@ main {
 /* ============================== */
 
 #interessen-intro {
-    margin: bottom 60px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 #interessen-intro h1 {
-    font-size:48px;
+    font-size:60px;
     font-weight: 800;
     color: #F1F1F3;
     margin: 0 0 10px 0;
@@ -407,19 +413,20 @@ main {
 #interessen-liste {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
     max-width: 700px;
 }
 
 .interessen-box {
-    border-radius:20px;
-    padding: 30px 40 px
+    border-radius: 20px 0px 0px 20px;
+    padding: 30px 80px 30px 40px;
+ 
 }
 
 .interessen-box h2 {
     font-size: 28px;
     font-weight: 800;
-    margin:0 0  15px 0;
+    margin:0 0 15px 0;
 
 }
 
