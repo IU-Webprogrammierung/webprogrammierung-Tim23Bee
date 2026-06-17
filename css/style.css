@@ -102,7 +102,7 @@ header {
 }
 
 
-/* Haupt- & Hero Layout */
+/* Haupt & Hero Layout */
 .hero-container {
     width: 100%;
     max-width: 100%;
@@ -158,7 +158,7 @@ header {
     margin-bottom: 5px;
 }
 
-/* Cursor-Animation */
+/* Cursor Animation */
 .typed-cursor {
     font-size: 50px;
     font-weight: 300;
@@ -166,7 +166,7 @@ header {
 }
 
 
-/* hero_satz */
+/* Hero Satz */
 .hero-description {
     font-family: "Inter", sans-serif;
     font-size: 20px;
@@ -188,7 +188,7 @@ header {
     margin-right: 0;
 }
 
-              /*Button-1-Projekt & Effekt*/
+/*Button-1-Projekt & Effekt*/
 
 .cta-container {
     display: flex;
@@ -287,10 +287,11 @@ main {
 }
 
 #ueber-mich-intro h1 {
+    font-family: "Urbanist" sans-serif;
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 600;
     color:#D0C3F4;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
     letter-spacing: 3px;
 }
 
@@ -410,7 +411,8 @@ main {
 }
 
 #interessen-intro h1 {
-    font-size:60px;
+    font-family: "Urbanist" sans-serif;
+    font-size: 60px;
     font-weight: 800;
     color: #D0C3F4;
     margin: 0 0 10px 0;
@@ -429,6 +431,7 @@ main {
     flex-direction: column;
     gap: 60px;
     max-width: 700px;
+    margin-right: auto;
 }
 
 .interessen-box {
@@ -438,14 +441,15 @@ main {
 }
 
 .interessen-box h2 {
-    font-size: 28px;
+    font-family: "Urbanist" sans-serif;
+    font-size: 48px;
     font-weight: 800;
     margin:0 0 15px 0;
 
 }
 
 .interessen-box p {
-    font-size: 18px;
+    font-size: 20px;
     line-height:1.7;
     margin: 0;
     font-weight:400;
@@ -489,6 +493,7 @@ main {
 }
 
 #projekte-intro h1 {
+    font-family: "Urbanist" sans-serif;
     font-size: 60px;
     font-weight: 800;
     color: #D0C3F4;
@@ -497,6 +502,7 @@ main {
 }
 
 #projekte-intro .intro-lead {
+    font-family: "Inter" sans-serif;
     color: #F1F1F3;
 }
 
@@ -531,14 +537,16 @@ main {
 }
 
 .projekt-eintrag h2 {
-    font-size: 45px;
-    font-weight: 800;
+    font-family: "Urbanist" sans-serif;
+    font-size: 48px;
+    font-weight: 600;
     color: #F1F1F3;
     margin: 0 0 12px 0;
     grid-column: 1;
 }
 
 .projekt-beschreibung {
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 1.6;
     color: #F1F1F3;
@@ -554,7 +562,7 @@ main {
 
 .projekt-link {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     color: #FFC224;
     text-decoration: none;
@@ -582,12 +590,107 @@ main {
 /* Intro */
 #kontakt-intro{
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 140px;
 }
 
 #kontakt-intro h1 {
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 800;
     color: #D0C3F4;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 20px;
+}
+
+#kontakt-intro .intro-lead {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #F1F1F3;
+    max-width: 620px;
+    margin: 0 auto 50px auto;
+}
+
+/* Icon-Liste */
+#kontakt-liste {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#kontakt-liste li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.kontakt-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.kontakt-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* Farbvarianten */
+.icon-pinterest {
+    background-color: #f3f1f1;
+}
+
+.icon-instagram {
+    background-color: #FFC224;
+}
+
+.icon-cosmos {
+    background-color: transparent;
+    border: 2px solid #F1F1F3;
+    border-radius: 50%
+}
+
+.icon-cosmos img {
+    width: 110%;
+    height: 100%;
+}
+
+/* Link-Text */
+#kontakt-liste a {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #F1F1F3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#kontakt-liste a:hover {
+    color: #D0C3F4;
+}
+
+/* E-Mail-Link */
+.kontakt-email {
+    font-size: 28px;
+    font-weight: 300;
+    color: #D0C3F4;
+}
+
+.kontakt-email:hover {
+    color: #FFC224;
+}
+
+#kontakt-liste li:first-child {
+    margin-bottom: 110px
 }
