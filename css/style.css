@@ -414,6 +414,10 @@ main {
     letter-spacing: 3px;
 }
 
+#interessen-intro .intro-lead {
+    color: #D0C3F4;
+}
+
 #interessen-liste {
     display: flex;
     flex-direction: column;
@@ -479,8 +483,12 @@ main {
     letter-spacing: 3px;
 }
 
+#projekte-intro .intro-lead {
+    color: #D0C3F4;
+}
+
 #projekte-liste {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -489,25 +497,25 @@ main {
     grid-template-columns: 1fr auto;
     align-items: start;
     gap: 20px;
-    padding: 30px 0;
+    padding: 50px 0;
     border-top: 1px solid #FFC224;
 }
 
-.projekt-eintrag:last-child {
-    border-bottom: 1px solid #FFC224;
+.projekt-eintrag:first-child {
+    border-top: 1px solid #FFC224
 }
 
 .projekt-jahr {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     color: #D0C3F4;
-    margin: 0 0 8px 0;
+    margin: 0 0 18px 0;
     grid-column: 1;
 }
 
 .projekt-eintrag h2 {
-    font-size: 24px;
+    font-size: 45px;
     font-weight: 800;
     color: #F1F1F3;
     margin: 0 0 12px 0;
@@ -515,7 +523,7 @@ main {
 }
 
 .projekt-beschreibung {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     color: #F1F1F3;
     margin: 0;
@@ -526,7 +534,7 @@ main {
 
 .projekt-link {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: #FFC224;
     text-decoration: none;
