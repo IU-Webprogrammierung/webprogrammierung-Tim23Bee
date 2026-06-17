@@ -456,3 +456,87 @@ main {
     border: 2px solid #F1F1F3;
     color: #F1F1F3;
 }
+
+
+
+
+
+
+/* ============================== */
+/* Projekte-Seite                */
+/* ============================== */
+
+#projekte-intro {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#projekt-intro h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #F1F1F3;
+    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
+#projekte-liste {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.projekt-eintrag {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 20px;
+    padding: 30px 0;
+    border-top: 1px solid #FFC224;
+}
+
+.projekt-eintrag:last-child {
+    border-bottom: 1px solid #FFC224;
+}
+
+.projekt-jahr {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #D0C3F4;
+    margin: 0 0 8px 0;
+    grid-column: 1;
+}
+
+.projekt-eintrag h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #F1F1F3;
+    margin: 0 0 12px 0;
+    grid-column: 1;
+}
+
+.projekt-beschreibung {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #F1F1F3;
+    margin: 0;
+    font-weight: 400;
+    max-width: 500px;
+    grid-column: 1;
+}
+
+.projekt-link {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFC224;
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    align-self: center;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.projekt-link:hover {
+    color: #D0C3F4;
+}
