@@ -289,7 +289,7 @@ main {
 #ueber-mich-intro h1 {
     font-size: 60px;
     font-weight: 800;
-    color:#F1F1F3;
+    color:#D0C3F4;
     margin: 0 0 10px 0;
     letter-spacing: 3px;
 }
@@ -297,7 +297,7 @@ main {
 #ueber-mich-intro h2 {
     font-size: 24px;
     font-weight: 400;
-    color: #D0C3F4;
+    color: #F1F1F3;
     margin: 0;
     letter-spacing: 2px;
 }
@@ -401,6 +401,9 @@ main {
 /* Interessen-Seite                */
 /* ============================== */
 
+
+/* Intro */
+
 #interessen-intro {
     margin-bottom: 60px;
     text-align: center;
@@ -409,14 +412,17 @@ main {
 #interessen-intro h1 {
     font-size:60px;
     font-weight: 800;
-    color: #F1F1F3;
+    color: #D0C3F4;
     margin: 0 0 10px 0;
     letter-spacing: 3px;
 }
 
 #interessen-intro .intro-lead {
-    color: #D0C3F4;
+    color: #F1F1F3;
 }
+
+
+/* Box-Liste */
 
 #interessen-liste {
     display: flex;
@@ -445,6 +451,9 @@ main {
     font-weight:400;
 }
 
+
+/* Farbvarianten */
+
 .box-lila {
     background-color: #D0C3F4;
     color: #0F0F1B;
@@ -470,6 +479,9 @@ main {
 /* Projekte-Seite                */
 /* ============================== */
 
+
+/* Intro */
+
 #projekte-intro {
     margin-bottom: 80px;
     text-align: center;
@@ -478,14 +490,17 @@ main {
 #projekte-intro h1 {
     font-size: 60px;
     font-weight: 800;
-    color: #F1F1F3;
+    color: #D0C3F4;
     margin: 0 0 10px 0;
     letter-spacing: 3px;
 }
 
 #projekte-intro .intro-lead {
-    color: #D0C3F4;
+    color: #F1F1F3;
 }
+
+
+/* Projekt-Einträge */
 
 #projekte-liste {
     max-width: 1200px;
@@ -523,14 +538,18 @@ main {
 }
 
 .projekt-beschreibung {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     color: #F1F1F3;
     margin: 0;
     font-weight: 400;
     max-width: 500px;
     grid-column: 1;
+    hyphens: auto;
 }
+
+
+/* "Mehr erfahren" Link */
 
 .projekt-link {
     font-family: "Inter", sans-serif;
