@@ -467,11 +467,11 @@ main {
 /* ============================== */
 
 #projekte-intro {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     text-align: center;
 }
 
-#projekt-intro h1{
+#projekte-intro h1 {
     font-size: 60px;
     font-weight: 800;
     color: #F1F1F3;
