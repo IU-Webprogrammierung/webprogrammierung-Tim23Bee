@@ -2,7 +2,7 @@
 // /index.html Begrüßung nach Zeit des Tages// 
 
 const currentHour = new Date().getHours();
-let Begruessung = "Ciao!"; // Standardbegrüßung
+let Begruessung = "Ciao!"; 
 
 if (currentHour >= 5 && currentHour < 12) {
     Begruessung = "Guten Morgen!";
@@ -24,7 +24,7 @@ if (document.getElementById('greeting-typewriter')) {
     });
 }
 
-// =============================================== //
+
 
 
 
@@ -50,7 +50,32 @@ async function loadComponents(selector, path) {
 
 }
 
-// =============================================== //
+
+
+
+
+
+
+// ====================================================//
+// Interaktivität: Dark/Light Mode Toggle
+//====================================================//
+
+function initThemeToggle() {
+    const themeToggle = document.querySelector('#theme-toggle');
+    if (!themeToggle) return;
+
+    themeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('light');
+        themeToggle.textContent = document.documentElement.classList.contains('light') ? '☀️' : '🌙';
+
+    });
+
+}
+
+
+
+
+
 
 
 // ====================================================//
