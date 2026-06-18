@@ -103,6 +103,7 @@ header {
 
 
 /* Haupt & Hero Layout */
+
 .hero-container {
     width: 100%;
     max-width: 100%;
@@ -112,8 +113,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc (100vh - 72px - 71px)
-    min-height: auto !important;
+    height: calc(100vh - 72px - 71px);
 }
 
 
@@ -186,6 +186,12 @@ header {
     width: 100%;
     margin-left: auto;
     margin-right: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*Button-1-Projekt & Effekt*/
@@ -287,7 +293,7 @@ main {
 }
 
 #ueber-mich-intro h1 {
-    font-family: "Urbanist" sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 60px;
     font-weight: 600;
     color:#D0C3F4;
@@ -411,7 +417,7 @@ main {
 }
 
 #interessen-intro h1 {
-    font-family: "Urbanist" sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 60px;
     font-weight: 800;
     color: #D0C3F4;
@@ -441,7 +447,7 @@ main {
 }
 
 .interessen-box h2 {
-    font-family: "Urbanist" sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 48px;
     font-weight: 800;
     margin:0 0 15px 0;
@@ -493,7 +499,7 @@ main {
 }
 
 #projekte-intro h1 {
-    font-family: "Urbanist" sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 60px;
     font-weight: 800;
     color: #D0C3F4;
@@ -502,7 +508,7 @@ main {
 }
 
 #projekte-intro .intro-lead {
-    font-family: "Inter" sans-serif;
+    font-family: "Inter", sans-serif;
     color: #F1F1F3;
 }
 
@@ -537,7 +543,7 @@ main {
 }
 
 .projekt-eintrag h2 {
-    font-family: "Urbanist" sans-serif;
+    font-family: "Urbanist", sans-serif;
     font-size: 48px;
     font-weight: 600;
     color: #F1F1F3;
@@ -697,6 +703,11 @@ main {
 
 
 
+
+
+
+
+
 /* ===================*/
 /* Hamburger Button   */
 /* ===================*/
@@ -726,6 +737,7 @@ main {
 /* =======================================================*/
 /* Responsive Navigation: Mobile Breakpoint (unter 768)   */
 /* =======================================================*/
+
 @media (max-width: 767px) {
     .hamburger {
         display: flex; 
@@ -817,9 +829,9 @@ main {
 /* BREAKPOINT 2: Mobile Layout (Kleiner Bildschirm unter 768px)  */
 /* =============================================================*/
 
-@media (max-width: 767) {
-    #ueber-mich-intro h1, #interessen-intro h1, #projekt-intro h1, .main-title {
-        font-size: 28px !important
+@media (max-width: 767px) {
+    #ueber-mich-intro h1, #interessen-intro h1, #projekte-intro h1, .main-title {
+        font-size: 28px !important;
     }
 
 header {
@@ -830,24 +842,26 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .hero-image-card {
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     max-width: 280px;
 }
 
 .cta-container {
     flex-direction: column;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .btn-primary, .btn-secondary {
-        width: 100%;
+        width: 280px;
+        margin: 0 auto;
         text-align: center;
         box-sizing: border-box;
+        justify-content: center;
     }
 
 .hero-container {
