@@ -20,8 +20,8 @@ if (document.getElementById('greeting-typewriter')) {
         typeSpeed: 130,
         showCursor: true,
         cursorChar: '|',
-        loop: false 
-    });     
+        loop: false
+    });
 }
 
 // =============================================== //
@@ -33,15 +33,20 @@ if (document.getElementById('greeting-typewriter')) {
 // =============================================== //
 // /komponenten header und footer laden //  
 
-loadComponents("header","components/header.html");
-loadComponents("footer","components/footer.html");
+loadComponents("header", "components/header.html");
+loadComponents("footer", "components/footer.html");
 
-async function loadComponents(selector, path){  
+async function loadComponents(selector, path) {
 
-   const response = await fetch(path);
-   const html = await response.text(); 
-   const element = document.querySelector(selector);
-   element.innerHTML = html;
+    const response = await fetch(path);
+    const html = await response.text();
+    const element = document.querySelector(selector);
+    element.innerHTML = html;
+
+    if (selector === "header") {
+        initThemeToggle();
+        initHamburgerMenu();
+    }
 
 }
 
@@ -52,15 +57,20 @@ async function loadComponents(selector, path){
 // Interaktivität: Hamburger-Menü öffnen und schließen
 //====================================================//
 
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const mobileNav = document.getElementById('mobile-nav');
+function initHamburgerMenu() {
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileNav = document.getElementById('main-nav');
 
-hamburgerBtn.addEventListener('click', () => {
-    // Schaltet die Klasse .active beim Button und der Navbar an oder aus
-    hamburgerBtn.classList.toggle('active');
-    mobileNav.classList.toggle('active');
-    
-    // Barrierefreiheit: Teilt dem Screenreader mit, ob das Menü offen oder zu ist
-    const isOpen = hamburgerBtn.classList.contains('active');
-    hamburgerBtn.setAttribute('aria-expanded', isOpen);
-});
+    if (!hamburgerBtn || !mobileNav) return;
+
+    hamburgerBtn.addEventListener('click', () => {
+
+        hamburgerBtn.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+
+
+        const isOpen = hamburgerBtn.classList.contains('active');
+        hamburgerBtn.setAttribute('aria-expanded', isOpen);
+
+    });
+}
