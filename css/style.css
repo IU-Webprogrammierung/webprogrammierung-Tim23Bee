@@ -705,8 +705,17 @@ main {
 
 
 
+
+
+/* ==============*/
+/* BREAKPOINTS   */
+/* ==============*/
+
+
+
+
 /* =====================================================================*/
-/* BREAKPOINT 1 Tablet Mittelgroßer Bildschirm von 768px bis 1024px)    */
+/* BREAKPOINT 1: Tablet Mittelgroßer Bildschirm von 768px bis 1024px)    */
 /* =====================================================================*/
 
 @media (max-width: 1024px) {
@@ -725,4 +734,50 @@ main {
     #fakten{
         gap: 40px;
     }
+}
+
+
+/* =============================================================*/
+/* BREAKPOINT 2: Mobile Layout (Kleiner Bildschirm unter 768px)  */
+/* =============================================================*/
+
+@media (max-width: 767) {
+    #ueber-mich-intro h1, #interessen-intro h1, #projekt-intro h1, .main-title {
+        font-size: 28px !important
+    }
+
+header {
+    padding: 15px 20px;
+}
+
+#hero-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.hero-image-card {
+    margin: 0 auto;
+    max-width: 280px;
+}
+
+.cta-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+.hero-container {
+    height: auto;
+    min-height: calc(100vh - 140px);
+    padding: 30px 20px;
+}
+
 }
