@@ -139,6 +139,7 @@ header {
 
 
 /* Haupttitle mein Name */
+
 .main-title {
     font-family: "Urbanist", sans-serif;
     font-size: 60px;
@@ -159,6 +160,7 @@ header {
 }
 
 /* Cursor Animation */
+
 .typed-cursor {
     font-size: 50px;
     font-weight: 300;
@@ -167,6 +169,7 @@ header {
 
 
 /* Hero Satz */
+
 .hero-description {
     font-family: "Inter", sans-serif;
     font-size: 20px;
@@ -372,7 +375,8 @@ main {
 #about .cta-container{
     width: 100vw;
     position: relative;
-    left: -22%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     margin-top: 70px;
@@ -869,5 +873,84 @@ header {
     min-height: calc(100vh - 140px);
     padding: 30px 20px;
 }
+
+
+   /* About-Seite Mobile */
+
+    main {
+        padding: 30px 20px 50px 20px;
+    }
+
+    #fakten {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .fakten-box {
+        padding: 12px 20px 25px;
+        flex: none;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .fakt-highlight {
+        font-size: 28px;
+    }
+
+    #about h2 {
+        font-size: 26px;
+    }
+
+    #about p {
+        font-size: 18px;
+        text-align: left;
+        hyphens: none;
+    }
+
+    #about .cta-container {
+        width: 100%;
+        left: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    #ziel {
+        padding: 40px 20px;
+        margin: 0 -20px -50px -20px;
+    }
+
+    #ziel h2 {
+        font-size: 28px;
+    }
+
+
+
+    /* Projekte-Seite Mobile */
+
+    .projekt-eintrag {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 35px 0;
+    }
+
+    .projekt-eintrag h2 {
+        font-size: 28px;
+    }
+
+    .projekt-beschreibung {
+        font-size: 16px;
+        max-width: 100%;
+        hyphens: none;
+    }
+
+    .projekt-link {
+        grid-column: 1;
+        grid-row: auto;
+        justify-self: start;
+        margin-top: 8px;
+    }
 
 }
