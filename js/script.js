@@ -29,6 +29,7 @@ if (document.getElementById('greeting-typewriter')) {
 
 
 
+
 // =============================================== //
 // /komponenten header und footer laden //  
 
@@ -45,3 +46,21 @@ async function loadComponents(selector, path){
 }
 
 // =============================================== //
+
+
+// ====================================================//
+// Interaktivität: Hamburger-Menü öffnen und schließen
+//====================================================//
+
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const mobileNav = document.getElementById('mobile-nav');
+
+hamburgerBtn.addEventListener('click', () => {
+    // Schaltet die Klasse .active beim Button und der Navbar an oder aus
+    hamburgerBtn.classList.toggle('active');
+    mobileNav.classList.toggle('active');
+    
+    // Barrierefreiheit: Teilt dem Screenreader mit, ob das Menü offen oder zu ist
+    const isOpen = hamburgerBtn.classList.contains('active');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+});
