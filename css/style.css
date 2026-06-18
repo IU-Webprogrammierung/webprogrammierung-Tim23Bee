@@ -107,13 +107,13 @@ header {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 40px 60px;
+    padding: 20px 60px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    min-height: calc(100vh - 80px - 72px);
+    height: calc (100vh - 72px - 71px)
+    min-height: auto !important;
 }
 
 
@@ -693,4 +693,36 @@ main {
 
 #kontakt-liste li:first-child {
     margin-bottom: 110px
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================================*/
+/* BREAKPOINT 1 Tablet Mittelgroßer Bildschirm von 768px bis 1024px)    */
+/* =====================================================================*/
+
+@media (max-width: 1024px) {
+    #ueber-mich-intro h1, #interessen-intro h1, #projekte-intro h1, .main-title {
+        font-size: 32px !important;
+    }
+
+    #hero-section {
+        gap: 40px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    #fakten{
+        gap: 40px;
+    }
 }
