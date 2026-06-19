@@ -64,10 +64,21 @@ function initThemeToggle() {
     const themeToggle = document.querySelector('#theme-toggle');
     if (!themeToggle) return;
 
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.documentElement.classList.add('light');
+        themeToggle.textContent ='🌙';
+     } else {
+        themeToggle.textContent = '☀️';
+    }
+
     themeToggle.addEventListener('click', () => {
         document.documentElement.classList.toggle('light');
-        themeToggle.textContent = document.documentElement.classList.contains('light') ? '☀️' : '🌙';
+        const isLight = document.documentElement.classList.contains('light');
 
+        themeToggle.textContent = isLight ? '🌙' : '☀️'
+
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
     });
 
 }
