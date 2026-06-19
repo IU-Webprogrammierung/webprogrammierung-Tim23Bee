@@ -118,6 +118,7 @@ header {
 
 
 /* Hero section layout */
+
 #hero-section {
     display: flex;
     justify-content: space-between;
@@ -128,6 +129,7 @@ header {
 
 
 /* ich bin: */
+
 .intro-lead {
     font-family: "Inter", sans-serif;
     font-size: 20px;
@@ -152,7 +154,7 @@ header {
 
 
 .typewriter {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 300;
     color: #F1F1F3;
     display: inline-block;
@@ -167,11 +169,20 @@ header {
     vertical-align: super;
 }
 
-.typewriter,
+
 .typed-cursor {
-    white-space:nowrap;
+white-space: nowrap;
+display: inline;
 }
 
+.typed-cursor {
+    white-space: nowrap;
+    display: inline;
+}
+
+h1 {
+    white-space: nowrap
+}
 
 /* Hero Satz */
 
@@ -852,6 +863,11 @@ header {
     justify-content: center;
     text-align: center;
     gap: 60px;
+}
+
+.hero-text {
+    width: 100%;
+    max-width: 100%;
 }
 
 .hero-image-card {
