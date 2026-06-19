@@ -167,6 +167,11 @@ header {
     vertical-align: super;
 }
 
+.typewriter,
+.typed-cursor {
+    white-space:nowrap;
+}
+
 
 /* Hero Satz */
 
@@ -376,7 +381,7 @@ main {
     width: 100vw;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-35%);
     display: flex;
     justify-content: center;
     margin-top: 70px;
