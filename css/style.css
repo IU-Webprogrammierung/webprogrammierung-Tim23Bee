@@ -98,7 +98,7 @@ header {
 }
 
 #theme-toggle:hover {
-    border-color: #FFC224;
+    border-color: #D0C3F4;
 }
 
 
@@ -987,96 +987,119 @@ header {
 /* ============================== */
 
 html.light body {
-    background-color: #F7F5FC;
-    color: #211D35;
+    background-color: #eeeeee;
+    color: #0F0F1B;
 }
 
+
+
 /* Header & Navigation */
+
 html.light header {
-    border-bottom: 1px solid #FFC224;
+    border-bottom: 1px solid #0F0F1B;
 }
 
 html.light .navbar a {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
+
+
 /* Footer */
+
 html.light footer {
-    border-top: 1px solid #FFC224;
+    border-top: 1px solid #0F0F1B;
 }
 
 html.light footer small {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
+
+
 /* Startseite */
+
 html.light .typewriter {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light .hero-description {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light .btn-secondary {
-    color: #211D35;
-    border-color: #211D35;
+    color: #0F0F1B;
+    border-color: #0F0F1B;
 }
 
+
+
 /* About-Seite */
+
 html.light #ueber-mich-intro h2 {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light .fakten-box {
-    background-color: rgba(33, 29, 53, 0.05);
+    background-color: rgb(88, 81, 223);
 }
 
 html.light .fakten-bo h3 {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light #about h2 {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light #about p {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
+/* Projekte-Seite */
+
+
+
+
+
+
 /* Interessen-Seite */
+
 html.light #interessen-intro .intro-lead {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light .box-outline {
-    border-color: #211D35;
-    color: #211D35;
+    border-color: #0F0F1B;
+    color: #0F0F1B;
 }
 
 /* Projekte-Seite */
 html.light #projekte-intro .intro-lead {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light .projekt-eintrag h2 {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light .projekt-beschreibung {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
+
+
 /* Kontakt-Seite */
+
 html.light #kontakt-intro .intro-lead {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light #kontakt-liste a {
-    color: #211D35;
+    color: #0F0F1B;
 }
 
 html.light .icon-cosmos {
-    border-color: #211D35;
-    color: #211D35;
+    border-color: #0F0F1B;
+    color: #0F0F1B;
 }
