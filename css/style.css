@@ -975,3 +975,108 @@ header {
     }
 
 }
+
+
+
+
+
+
+
+/* ============================== */
+/* Light Mode                      */
+/* ============================== */
+
+html.light body {
+    background-color: #F7F5FC;
+    color: #211D35;
+}
+
+/* Header & Navigation */
+html.light header {
+    border-bottom: 1px solid #FFC224;
+}
+
+html.light .navbar a {
+    color: #211D35;
+}
+
+/* Footer */
+html.light footer {
+    border-top: 1px solid #FFC224;
+}
+
+html.light footer small {
+    color: #211D35;
+}
+
+/* Startseite */
+html.light .typewriter {
+    color: #211D35;
+}
+
+html.light .hero-description {
+    color: #211D35;
+}
+
+html.light .btn-secondary {
+    color: #211D35;
+    border-color: #211D35;
+}
+
+/* About-Seite */
+html.light #ueber-mich-intro h2 {
+    color: #211D35;
+}
+
+html.light .fakten-box {
+    background-color: rgba(33, 29, 53, 0.05);
+}
+
+html.light .fakten-bo h3 {
+    color: #211D35;
+}
+
+html.light #about h2 {
+    color: #211D35;
+}
+
+html.light #about p {
+    color: #211D35;
+}
+
+/* Interessen-Seite */
+html.light #interessen-intro .intro-lead {
+    color: #211D35;
+}
+
+html.light .box-outline {
+    border-color: #211D35;
+    color: #211D35;
+}
+
+/* Projekte-Seite */
+html.light #projekte-intro .intro-lead {
+    color: #211D35;
+}
+
+html.light .projekt-eintrag h2 {
+    color: #211D35;
+}
+
+html.light .projekt-beschreibung {
+    color: #211D35;
+}
+
+/* Kontakt-Seite */
+html.light #kontakt-intro .intro-lead {
+    color: #211D35;
+}
+
+html.light #kontakt-liste a {
+    color: #211D35;
+}
+
+html.light .icon-cosmos {
+    border-color: #211D35;
+    color: #211D35;
+}
