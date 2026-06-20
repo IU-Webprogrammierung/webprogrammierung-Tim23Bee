@@ -989,9 +989,27 @@ header {
 html.light body {
     background-color: #eeeeee;
     color: #0F0F1B;
+
 }
 
+html.light .main-title,
+html.light .nav-number,
+html.light .fakt-highlight,
+html.light .projekt-jahr,
+html.light .kontakt-email,
+html.light #ueber-mich-intro h1,
+html.light #interessen-intro h1
+html.light #projekte-intro h1,
+html.light #kontakt-intro h1 {
+    color: #7c6ba8
+}
 
+html.light .btn-primary:hover {
+    background-color: #7c6ba8;
+    border-color: #7C6BA8;
+    color: #0F0F1B
+
+}
 
 /* Header & Navigation */
 
@@ -1096,10 +1114,9 @@ html.light #kontakt-intro .intro-lead {
 }
 
 html.light #kontakt-liste a {
-    color: #0F0F1B;
+    color: #0f1b0f;
 }
 
 html.light .icon-cosmos {
-    border-color: #0F0F1B;
     color: #0F0F1B;
 }
