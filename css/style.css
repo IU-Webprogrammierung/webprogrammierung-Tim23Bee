@@ -92,7 +92,7 @@ header {
     border: 2px solid #0F0F1B;
     border-radius: 100px;
     padding: 8px 12px;
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -987,9 +987,8 @@ header {
 /* ============================== */
 
 html.light body {
-    background-color: #eeeeee;
+    background-color: #d7d7d7;
     color: #0F0F1B;
-
 }
 
 html.light .main-title,
@@ -1001,20 +1000,15 @@ html.light #ueber-mich-intro h1,
 html.light #interessen-intro h1
 html.light #projekte-intro h1,
 html.light #kontakt-intro h1 {
-    color: #7c6ba8
+    color: #5024bd
 }
 
-html.light .btn-primary:hover {
-    background-color: #7c6ba8;
-    border-color: #7C6BA8;
-    color: #0F0F1B
 
-}
 
 /* Header & Navigation */
 
 html.light header {
-    border-bottom: 1px solid #0F0F1B;
+    border-bottom: 2px solid #0F0F1B;
 }
 
 html.light .navbar a {
@@ -1023,21 +1017,13 @@ html.light .navbar a {
 
 
 
-/* Footer */
-
-html.light footer {
-    border-top: 1px solid #0F0F1B;
-}
-
-html.light footer small {
-    color: #0F0F1B;
-}
-
-
-
 /* Startseite */
 
 html.light .typewriter {
+    color: #0F0F1B;
+}
+
+html.light .intro-lead {
     color: #0F0F1B;
 }
 
@@ -1050,6 +1036,28 @@ html.light .btn-secondary {
     border-color: #0F0F1B;
 }
 
+html.light .btn-primary:hover {
+    background-color: #5024bd;
+    border-color: #5024bd;
+    color: #ffffff
+
+}
+
+html.light .navbar a::after{
+    background-color:#5024bd
+}
+
+html.light .navbar a:hover {
+    color:#5024bd
+}
+
+html.light #theme-toggle:hover {
+    border-color: #FFC224
+}
+
+html.light #theme-toggle {
+    border-color: transparent;
+}
 
 
 /* About-Seite */
@@ -1120,3 +1128,18 @@ html.light #kontakt-liste a {
 html.light .icon-cosmos {
     color: #0F0F1B;
 }
+
+
+
+/* Footer */
+
+html.light footer {
+    border-top: 2px solid #0F0F1B;
+}
+
+html.light footer small {
+    color: #0F0F1B;
+}
+
+
+
