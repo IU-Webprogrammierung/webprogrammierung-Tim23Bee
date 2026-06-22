@@ -848,12 +848,8 @@ main {
         font-size: 32px !important;
     }
 
-    #hero-section {
-        gap: 40px;
-    }
-
     .typewriter {
-        font-size: 65px;
+        font-size: 50px;
     }
 
     .hero-description {
@@ -913,7 +909,7 @@ header {
 .hero-container {
     height: auto;
     min-height: calc(100vh - 140px);
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 
