@@ -76,7 +76,7 @@ function initThemeToggle() {
         document.documentElement.classList.toggle('light');
         const isLight = document.documentElement.classList.contains('light');
 
-        themeToggle.textContent = isLight ? '🌙' : '☀️'
+        themeToggle.textContent = isLight ? '🌑 ' : '☀️'
 
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
     });

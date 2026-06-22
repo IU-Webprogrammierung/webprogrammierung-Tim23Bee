@@ -754,6 +754,8 @@ main {
 }
 
 
+
+
 /* =======================================================*/
 /* Responsive Navigation: Mobile Breakpoint (unter 768)   */
 /* =======================================================*/
@@ -782,7 +784,7 @@ main {
     }
 
     .navbar a {
-        width: 150px;
+        width: auto;
         display: inline-flex;
     }
 
@@ -792,15 +794,11 @@ main {
     }
 
     html.light .navbar {
-        background-color: #f7f5fc
+        background-color: #d7d7d7
 
     }
 
     html.light .navbar a {
-        color: #0F0F1B
-    }
-
-    html.light #theme-toggle {
         color: #0F0F1B
     }
 
@@ -811,8 +809,8 @@ main {
 
     
     #theme-toggle {
-        margin-top: 15px;
-        font-size: 24px;
+        margin-top: 20px;
+        font-size: 44px;
     }
 
     
@@ -999,9 +997,15 @@ header {
 
 }
 
+/* ======================== */
+/* Hover deaktiviert Mobile */
+/* ======================== */
 
-
-
+@media (hover: none) {
+    * {
+        transition: none !important;
+    }
+}
 
 
 
@@ -1020,7 +1024,7 @@ html.light .fakt-highlight,
 html.light .projekt-jahr,
 html.light .kontakt-email,
 html.light #ueber-mich-intro h1,
-html.light #interessen-intro h1
+html.light #interessen-intro h1,
 html.light #projekte-intro h1,
 html.light #kontakt-intro h1 {
     color: #5024bd
@@ -1074,13 +1078,15 @@ html.light .navbar a:hover {
     color:#5024bd
 }
 
+
 html.light #theme-toggle:hover {
-    border-color: #FFC224
+    border-color: #0F0F1B;
 }
 
 html.light #theme-toggle {
     border-color: transparent;
 }
+
 
 
 /* About-Seite */
@@ -1093,12 +1099,13 @@ html.light .fakten-box {
     background-color: rgb(88, 81, 223);
 }
 
-html.light .fakten-bo h3 {
-    color: #0F0F1B;
+html.light .fakten-box h3,
+html.light .fakt-highlight {
+    color: #FFFFFF;
 }
 
 html.light #about h2 {
-    color: #0F0F1B;
+    color: #0f1b19;
 }
 
 html.light #about p {
@@ -1109,9 +1116,13 @@ html.light #ziel h2 {
     color: #000000;
 }
 
+
+
 /* Projekte-Seite */
 
-
+html.light .projekt-link {
+    color: #5024bd;
+}
 
 
 
@@ -1123,11 +1134,12 @@ html.light #interessen-intro .intro-lead {
 }
 
 html.light .box-outline {
-    border-color: #0F0F1B;
+    border-color: #0f1b11;
     color: #0F0F1B;
 }
 
 /* Projekte-Seite */
+
 html.light #projekte-intro .intro-lead {
     color: #0F0F1B;
 }
