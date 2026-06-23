@@ -66,6 +66,9 @@ header {
     color: #D0C3F4;
     margin-right: 3px;
     transition: color 0.3s ease;
+    min-width: 35px;
+    display: inline-block;
+    text-align:right;
 }
 
 .navbar a:hover {
@@ -786,6 +789,14 @@ main {
     .navbar a {
         width: auto;
         display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a .nav-number {
+        width: 35px;
+        text-align:right;
+        display: inline-block;
     }
 
     
