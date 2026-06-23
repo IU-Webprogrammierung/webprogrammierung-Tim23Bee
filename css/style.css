@@ -64,9 +64,8 @@ header {
 /* Zahl in der navbar dauerhaft lila bleibt */
 .navbar a .nav-number {
     color: #D0C3F4;
-    margin-right: 3px;
     transition: color 0.3s ease;
-    min-width: 35px;
+    min-width: 60px;
     display: inline-block;
     text-align:right;
 }
@@ -349,7 +348,7 @@ main {
     font-style: normal;
 }
 
-.fakten-bo h3 {
+.fakten-box h3 {
     font-size:18px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
@@ -787,15 +786,17 @@ main {
     }
 
     .navbar a {
-        width: auto;
-        display: inline-flex;
+        display: grid;
+        grid-template-columns: 45px auto;
         align-items: center;
-        gap: 10px;
+        white-space: 250px;
+        text-align: left;
     }
 
     .navbar a .nav-number {
-        width: 35px;
-        text-align:right;
+        min-width: auto;
+        width: auto;
+        text-align: left;
         display: inline-block;
     }
 
