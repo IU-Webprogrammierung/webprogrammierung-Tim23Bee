@@ -953,8 +953,16 @@ header {
         left: 0;
         margin-top: 40px;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
     }
 
+    #about .btn-primary {
+        width:auto;
+        margin:0;
+        padding: 15px 40px;
+    }
+    
     #ziel {
         padding: 40px 20px;
         margin: 0 -20px -50px -20px;
@@ -1109,7 +1117,11 @@ html.light #about p {
 }
 
 html.light #ziel h2 {
-    color: #000000;
+    color: #0F0F1B;
+}
+
+html.light #ziel {
+    border-top: 2px solid #0F0F1B;
 }
 
 
