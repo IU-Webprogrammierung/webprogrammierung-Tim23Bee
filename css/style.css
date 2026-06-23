@@ -388,7 +388,7 @@ main {
     hyphens: auto;
 }
 
-#about .cta-container{
+#about .cta-container {
     width: 100vw;
     position: relative;
     left: 50%;
@@ -899,12 +899,13 @@ header {
 }
 
 .btn-primary, .btn-secondary {
-        width: 280px;
+        width: 230px;
         margin: 0 auto;
         text-align: center;
         box-sizing: border-box;
         justify-content: center;
     }
+
 
 .hero-container {
     height: auto;
@@ -951,18 +952,12 @@ header {
     #about .cta-container {
         width: 100%;
         left: 0;
+        transform: none;
         margin-top: 40px;
         margin-bottom: 30px;
-        display: flex;
-        justify-content: center;
     }
 
-    #about .btn-primary {
-        width:auto;
-        margin:0;
-        padding: 15px 40px;
-    }
-    
+ 
     #ziel {
         padding: 40px 20px;
         margin: 0 -20px -50px -20px;

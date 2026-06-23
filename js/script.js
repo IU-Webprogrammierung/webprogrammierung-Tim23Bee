@@ -67,7 +67,7 @@ function initThemeToggle() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
         document.documentElement.classList.add('light');
-        themeToggle.textContent ='🌙';
+        themeToggle.textContent ='🌑';
      } else {
         themeToggle.textContent = '☀️';
     }
