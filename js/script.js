@@ -79,13 +79,21 @@ function initThemeToggle() {
         themeToggle.textContent = isLight ? '🌑 ' : '☀️'
 
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        updateLogo();
     });
 
 }
 
+// ====================================================//
+// Logo wechseln je nach Modus
+//====================================================//
 
-
-
+function updateLogo() {
+    const logo = document.getElementById('logo-img');
+    if (!logo) return;
+    const isLight = document.documentElement.classList.contains('light');
+    
+}
 
 
 
