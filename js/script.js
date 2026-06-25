@@ -72,6 +72,8 @@ function initThemeToggle() {
         themeToggle.textContent = '☀️';
     }
 
+    updateLogo();
+
     themeToggle.addEventListener('click', () => {
         document.documentElement.classList.toggle('light');
         const isLight = document.documentElement.classList.contains('light');
@@ -92,7 +94,7 @@ function updateLogo() {
     const logo = document.getElementById('logo-img');
     if (!logo) return;
     const isLight = document.documentElement.classList.contains('light');
-    
+    logo.src = isLight ? 'images/logo2_light.webp' : 'images/logo1_dark.webp';
 }
 
 
