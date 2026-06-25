@@ -41,9 +41,6 @@ header {
     transition: transform 0.5s ease;
 }
 
-.logo img:hover {
-    transform: scale(1.07) rotate(3deg);
-}
 
 .navbar {
     display: flex;
@@ -73,9 +70,7 @@ header {
     text-align:right;
 }
 
-.navbar a:hover {
-    color: #D0C3F4;
-}
+
 
 .navbar a::after {
     content: '';
@@ -88,9 +83,7 @@ header {
     transition: width 0.3s ease;
 }
 
-.navbar a:hover::after {
-    width: calc(100% - 38px);
-}
+
 
 #theme-toggle {
     background: none;
@@ -102,9 +95,6 @@ header {
     transition: all 0.3s ease;
 }
 
-#theme-toggle:hover {
-    border-color: #D0C3F4;
-}
 
 
 /* Haupt & Hero Layout */
@@ -242,14 +232,10 @@ h1 {
     transition: all 0.5s ease-in-out;
 }
 
-.btn-primary:hover {
-    background-color: #D0C3F4;
-    border-color: #D0C3F4;
-    color: #0F0F1B;
-}
 
 
-             /*Button-2-Kontakt & Effekt*/
+/*Button-2-Kontakt & Effekt*/
+
 .btn-secondary {
     display: inline-block;
     font-family: "Inter", sans-serif;
@@ -265,13 +251,10 @@ h1 {
     transition: all 0.5s ease;
 }
 
-.btn-secondary:hover {
-    border-color:#FFC224;
-    color: #FFC224;
-    background-color: rgba(248, 167, 45, 0.1);
-}
+
 
 /* Footer */
+
 footer {
     display: flex;
     justify-content: center;
@@ -604,11 +587,6 @@ main {
     transition: color 0.3s ease;
 }
 
-.projekt-link:hover {
-    color: #D0C3F4;
-}
-
-
 
 
 
@@ -707,20 +685,15 @@ main {
     transition: color 0.3s ease;
 }
 
-#kontakt-liste a:hover {
-    color: #D0C3F4;
-}
 
 /* E-Mail-Link */
+
 .kontakt-email {
     font-size: 28px;
     font-weight: 300;
     color: #D0C3F4;
 }
 
-.kontakt-email:hover {
-    color: #FFC224;
-}
 
 #kontakt-liste li:first-child {
     margin-bottom: 110px
@@ -798,7 +771,7 @@ main {
     }
 
     .navbar a .nav-number {
-        width: 50;
+        width: 50px;
         text-align: right;
         display: inline-block;
     }
@@ -1010,18 +983,28 @@ header {
 
 }
 
-/* ======================== */
-/* Hover deaktiviert Mobile */
-/* ======================== */
+/* ==============================  */
+/* Hover nur auf Desktop mit Maus  */
+/* ==============================  */
 
-@media (hover: none) {
-    *:hover {
-        color: inherit !important;
-        background-color: inherit !important;
-        border-color: inherit !important;
-        transform: none !important;
-        transition: none !important;
-    }
+@media (hover: hover) {
+    
+    /* Dark Mode */
+    .logo img:hover { transform: scale(1.07) rotate(3deg); }
+    .navbar a:hover { color: #D0C3F4; }
+    .navbar a:hover::after { width: calc(100% - 38px); }
+    #theme-toggle:hover { border-color: #D0C3F4; }
+    .btn-primary:hover { background-color: #D0C3F4; border-color: #D0C3F4; color: #0F0F1B; }
+    .btn-secondary:hover { border-color: #FFC224; color: #FFC224; background-color: rgba(248, 167, 45, 0.1); }
+    .projekt-link:hover { color: #D0C3F4; }
+    #kontakt-liste a:hover { color: #D0C3F4; }
+    .kontakt-email:hover { color: #FFC224; }
+
+    /* Light Mode */
+    html.light .btn-primary:hover { background-color: #5024bd; border-color: #5024bd; color: #ffffff; }
+    html.light .navbar a:hover { color: #5024bd; }
+    html.light #theme-toggle:hover { border-color: #0F0F1B; }
+    html.light .projekt-link:hover { color: #0F0F1B; }
 }
 
 
@@ -1080,25 +1063,11 @@ html.light .btn-secondary {
     border-color: #0F0F1B;
 }
 
-html.light .btn-primary:hover {
-    background-color: #5024bd;
-    border-color: #5024bd;
-    color: #ffffff
-
-}
 
 html.light .navbar a::after {
     background-color:#5024bd;
 }
 
-html.light .navbar a:hover {
-    color:#5024bd
-}
-
-
-html.light #theme-toggle:hover {
-    border-color: #0F0F1B;
-}
 
 html.light #theme-toggle {
     border-color: transparent;
@@ -1174,10 +1143,6 @@ html.light .projekt-link {
     color: #5024bd;
 }
 
-html.light .projekt-link:hover {
-    color: #0F0F1B
-}
-
 
 
 /* Kontakt-Seite */
@@ -1193,15 +1158,6 @@ html.light #kontakt-liste a {
 html.light .icon-cosmos {
     color: #0F0F1B;
 }
-
- html.light #kontakt-liste a:hover {
-        color: #5024bd;
-    }
-    
-    html.light .kontakt-email:hover {
-        color: #5024bd;
-    }
-
 
 
 
