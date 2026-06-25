@@ -787,17 +787,21 @@ main {
 
     .navbar a {
         display: grid;
-        grid-template-columns: 45px auto;
+        grid-template-columns: 40px auto;
         align-items: center;
         white-space: 250px;
         text-align: left;
+        margin: 0 auto;
     }
 
     .navbar a .nav-number {
-        min-width: auto;
-        width: auto;
-        text-align: left;
+        width: 50;
+        text-align: right;
         display: inline-block;
+    }
+
+    .navbar a::after {
+        display: none;
     }
 
     
@@ -816,7 +820,7 @@ main {
 
     
     .navbar a {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     
