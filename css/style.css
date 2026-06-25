@@ -747,7 +747,7 @@ html.light .hamburger span {
         display: flex; 
     }
 
-
+    
     .navbar {
         display: none; 
         flex-direction: column;
