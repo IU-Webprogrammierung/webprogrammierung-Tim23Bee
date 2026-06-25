@@ -767,11 +767,18 @@ html.light .hamburger span {
 
     .navbar a {
         display: grid;
-        grid-template-columns: 40px auto;
+        grid-template-columns: 60px 5fr;
         align-items: center;
+        gap: 15px;
         text-align: left;
-        margin: 0 auto;
         font-size: 28px;
+        white-space: normal;
+        width: 220px;
+    }
+
+    .navbar a .nav-number {
+        text-align: right;
+        display: block;
     }
 
     .navbar a .nav-number {
