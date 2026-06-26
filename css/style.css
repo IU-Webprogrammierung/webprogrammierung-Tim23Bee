@@ -67,7 +67,7 @@ header {
     transition: color 0.3s ease;
     min-width: 60px;
     display: inline-block;
-    text-align:right;
+    text-align: right;
 }
 
 
@@ -166,8 +166,8 @@ header {
 
 
 .typed-cursor {
-white-space: nowrap;
-display: inline;
+    white-space: nowrap;
+    display: inline;
 }
 
 .typed-cursor {
@@ -221,11 +221,11 @@ h1 {
     align-items: center;
     font-family: "Inter", sans-serif;
     font-size: 20px;
-    font-weight:700;
-    color:#0F0F1B;
+    font-weight: 700;
+    color: #0F0F1B;
     background-color: #FFC224;
-    text-decoration:none;
-    padding: 15px 40px; 
+    text-decoration: none;
+    padding: 15px 40px;
     border-radius: 100px;
     border: 2px solid #FFC224;
     cursor: pointer;
@@ -240,8 +240,8 @@ h1 {
     display: inline-block;
     font-family: "Inter", sans-serif;
     font-size: 20px;
-    font-weight:700;
-    color:#F1F1F3;
+    font-weight: 700;
+    color: #F1F1F3;
     background-color: transparent;
     text-decoration: none;
     padding: 15px 40px;
@@ -303,7 +303,7 @@ main {
     font-family: "Urbanist", sans-serif;
     font-size: 60px;
     font-weight: 600;
-    color:#D0C3F4;
+    color: #D0C3F4;
     margin: 0 0 30px 0;
     letter-spacing: 3px;
 }
@@ -325,7 +325,7 @@ main {
     margin-bottom: 90px;
 }
 
-.fakten-box{
+.fakten-box {
     flex: 6;
     background-color: rgba(200, 200, 200, 0.09);
     border: 1.5px solid #FFC224;
@@ -335,7 +335,7 @@ main {
 }
 
 .fakten-box h3 {
-    font-size:18px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     color: #F1F1F3;
@@ -451,22 +451,22 @@ main {
 .interessen-box {
     border-radius: 0px 30px 30px 0px;
     padding: 30px 80px 30px 40px;
- 
+
 }
 
 .interessen-box h2 {
     font-family: "Urbanist", sans-serif;
     font-size: 48px;
     font-weight: 800;
-    margin:0 0 15px 0;
+    margin: 0 0 15px 0;
 
 }
 
 .interessen-box p {
     font-size: 20px;
-    line-height:1.7;
+    line-height: 1.7;
     margin: 0;
-    font-weight:400;
+    font-weight: 400;
 }
 
 
@@ -597,7 +597,7 @@ main {
 /* ============================== */
 
 /* Intro */
-#kontakt-intro{
+#kontakt-intro {
     text-align: center;
     margin-bottom: 140px;
 }
@@ -628,7 +628,7 @@ main {
     padding: 0;
     margin: 0;
     width: fit-content;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -711,7 +711,7 @@ main {
 /* ===================*/
 
 .hamburger {
-    display: none; 
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -720,22 +720,55 @@ main {
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 1001; 
+    z-index: 1001;
 }
 
 .hamburger span {
     width: 100%;
     height: 3px;
-    background-color: #D0C3F4; 
+    background-color: #D0C3F4;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
 
 html.light .hamburger span {
-    background-color:#5024bd;
+    background-color: #5024bd;
 }
 
 
+
+
+
+
+/* ==============*/
+/* BREAKPOINTS   */
+/* ==============*/
+
+/* =====================================================================*/
+/* BREAKPOINT 1: Tablet Mittelgroßer Bildschirm von 768px bis 1024px)    */
+/* =====================================================================*/
+
+@media (max-width: 1024px) {
+
+    #ueber-mich-intro h1,
+    #interessen-intro h1,
+    #projekte-intro h1,
+    .main-title {
+        font-size: 32px !important;
+    }
+
+    .typewriter {
+        font-size: 50px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    #fakten {
+        gap: 40px;
+    }
+}
 
 
 /* =======================================================*/
@@ -743,26 +776,32 @@ html.light .hamburger span {
 /* =======================================================*/
 
 @media (max-width: 767px) {
-    .hamburger {
-        display: flex; 
+
+    header {
+        padding: 15px 20px;
     }
 
-    
+
+    .hamburger {
+        display: flex;
+    }
+
+
     .navbar {
-        display: none; 
+        display: none;
         flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #0F0F1B; 
+        background-color: #0F0F1B;
         justify-content: center;
         align-items: center;
-        gap: 45px; 
+        gap: 45px;
         z-index: 1000;
         padding: 0;
-       
+
     }
 
     .navbar a {
@@ -786,14 +825,13 @@ html.light .hamburger span {
         display: none;
     }
 
-    
+
     .navbar.active {
         display: flex;
     }
 
     html.light .navbar {
         background-color: #d7d7d7
-
     }
 
     html.light .navbar a {
@@ -806,92 +844,53 @@ html.light .hamburger span {
         font-size: 44px;
     }
 
-    
+
     .hamburger.active span:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
+
     .hamburger.active span:nth-child(2) {
-        opacity: 0; 
+        opacity: 0;
     }
+
     .hamburger.active span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
-}
 
 
-
-
-
-
-
-
-/* ==============*/
-/* BREAKPOINTS   */
-/* ==============*/
-
-
-
-
-/* =====================================================================*/
-/* BREAKPOINT 1: Tablet Mittelgroßer Bildschirm von 768px bis 1024px)    */
-/* =====================================================================*/
-
-@media (max-width: 1024px) {
-    #ueber-mich-intro h1, #interessen-intro h1, #projekte-intro h1, .main-title {
-        font-size: 32px !important;
-    }
-
-    .typewriter {
-        font-size: 50px;
-    }
-
-    .hero-description {
-        font-size: 18px;
-    }
-
-    #fakten{
-        gap: 40px;
-    }
-}
-
-
-/* =============================================================*/
-/* BREAKPOINT 2: Mobile Layout (Kleiner Bildschirm unter 768px)  */
-/* =============================================================*/
-
-@media (max-width: 767px) {
-    #ueber-mich-intro h1, #interessen-intro h1, #projekte-intro h1, .main-title {
+    #ueber-mich-intro h1,
+    #interessen-intro h1,
+    #projekte-intro h1,
+    .main-title {
         font-size: 48px !important;
     }
 
-header {
-    padding: 15px 20px;
-}
 
-#hero-section {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 60px;
-}
+    #hero-section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 60px;
+    }
 
-.hero-text {
-    width: 100%;
-    max-width: 100%;
-}
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
 
-.hero-image-card {
-    margin: 30px auto 0 auto;
-    max-width: 280px;
-}
+    .hero-image-card {
+        margin: 30px auto 0 auto;
+        max-width: 280px;
+    }
 
-.cta-container {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 35px;
-}
+    .cta-container {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 35px;
+    }
 
-.btn-primary, .btn-secondary {
+    .btn-primary,
+    .btn-secondary {
         width: 230px;
         margin: 0 auto;
         text-align: center;
@@ -900,14 +899,14 @@ header {
     }
 
 
-.hero-container {
-    height: auto;
-    min-height: calc(100vh - 140px);
-    padding: 20px 20px;
-}
+    .hero-container {
+        height: auto;
+        min-height: calc(100vh - 140px);
+        padding: 20px 20px;
+    }
 
 
-   /* About-Seite Mobile */
+    /* About-Seite Mobile */
 
     main {
         padding: 30px 20px 50px 20px;
@@ -950,7 +949,7 @@ header {
         margin-bottom: 30px;
     }
 
- 
+
     #ziel {
         padding: 40px 20px;
         margin: 0 -20px -50px -20px;
@@ -989,30 +988,80 @@ header {
 
 }
 
+
 /* ==============================  */
 /* Hover nur auf Desktop mit Maus  */
 /* ==============================  */
 
 @media (hover: hover) {
-    
+
     /* Dark Mode */
-    .logo img:hover { transform: scale(1.07) rotate(3deg); }
-    .navbar a:hover { color: #D0C3F4; }
-    .navbar a:hover::after { width: calc(100% - 38px); }
-    #theme-toggle:hover { border-color: #D0C3F4; }
-    .btn-primary:hover { background-color: #D0C3F4; border-color: #D0C3F4; color: #0F0F1B; }
-    .btn-secondary:hover { border-color: #FFC224; color: #FFC224; background-color: rgba(248, 167, 45, 0.1); }
-    .projekt-link:hover { color: #D0C3F4; }
-    #kontakt-liste a:hover { color: #D0C3F4; }
-    .kontakt-email:hover { color: #FFC224; }
+    .logo img:hover {
+        transform: scale(1.07) rotate(3deg);
+    }
+
+    .navbar a:hover {
+        color: #D0C3F4;
+    }
+
+    .navbar a:hover::after {
+        width: calc(100% - 38px);
+    }
+
+    #theme-toggle:hover {
+        border-color: #D0C3F4;
+    }
+
+    .btn-primary:hover {
+        background-color: #D0C3F4;
+        border-color: #D0C3F4;
+        color: #0F0F1B;
+    }
+
+    .btn-secondary:hover {
+        border-color: #FFC224;
+        color: #FFC224;
+        background-color: rgba(248, 167, 45, 0.1);
+    }
+
+    .projekt-link:hover {
+        color: #D0C3F4;
+    }
+
+    #kontakt-liste a:hover {
+        color: #D0C3F4;
+    }
+
+    .kontakt-email:hover {
+        color: #FFC224;
+    }
 
     /* Light Mode */
-    html.light .btn-primary:hover { background-color: #5024bd; border-color: #5024bd; color: #ffffff; }
-    html.light .navbar a:hover { color: #5024bd; }
-    html.light #theme-toggle:hover { border-color: #0F0F1B; }
-    html.light .projekt-link:hover { color: #0F0F1B; }
-    html.light #kontakt-liste a:hover {color: #5024bd; }
-    html.light .kontakt-email:hover { color: #5024bd; }
+    html.light .btn-primary:hover {
+        background-color: #5024bd;
+        border-color: #5024bd;
+        color: #ffffff;
+    }
+
+    html.light .navbar a:hover {
+        color: #5024bd;
+    }
+
+    html.light #theme-toggle:hover {
+        border-color: #0F0F1B;
+    }
+
+    html.light .projekt-link:hover {
+        color: #0F0F1B;
+    }
+
+    html.light #kontakt-liste a:hover {
+        color: #5024bd;
+    }
+
+    html.light .kontakt-email:hover {
+        color: #5024bd;
+    }
 }
 
 
@@ -1073,7 +1122,7 @@ html.light .btn-secondary {
 
 
 html.light .navbar a::after {
-    background-color:#5024bd;
+    background-color: #5024bd;
 }
 
 
@@ -1178,6 +1227,3 @@ html.light footer {
 html.light footer small {
     color: #0F0F1B;
 }
-
-
-
