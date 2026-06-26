@@ -777,11 +777,6 @@ html.light .hamburger span {
     }
 
     .navbar a .nav-number {
-        text-align: right;
-        display: block;
-    }
-
-    .navbar a .nav-number {
         width: 50px;
         text-align: right;
         display: inline-block;
@@ -1016,6 +1011,8 @@ header {
     html.light .navbar a:hover { color: #5024bd; }
     html.light #theme-toggle:hover { border-color: #0F0F1B; }
     html.light .projekt-link:hover { color: #0F0F1B; }
+    html.light #kontakt-liste a:hover {color: #5024bd; }
+    html.light .kontakt-email:hover { color: #5024bd; }
 }
 
 
