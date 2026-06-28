@@ -15,7 +15,7 @@
 <p>Ziel des Projekts ist die Erstellung einer minimalistischen Visitenkarte. Die Website dient als zentrale Plattform, um Qualifikationen und Interessen kompakt zu präsentieren..</p>
 
 ### Struktur & Seitenumfang
-<p>Das Portfolio ist als mehrseitiger Webauftritt konzipiert und umfasst eine Hauptseite sowie vier themenspezifische Unterseiten. Ziel ist es auch nocht im weiteresn Verlauf des Projektes eventuell 2 weitere Seiten hinzuzufügen. Im Moment bleibt es bei vier Unterseiten plus der Hauptseite, da der Fokus noch auf den Hauptkriterien der Aufgabenstellung liegt, anstatt inhaltlich auszuschweifen. Der Header beinhaltet das Logo sowie eine konsistente Navigationsleiste zur einfachen Orientierung.</p>
+<p>Das Portfolio ist als mehrseitiger Webauftritt konzipiert und umfasst eine Hauptseite sowie vier themenspezifische Unterseiten und eine 404 Seite. Ziel ist es auch nocht im weiteresn Verlauf des Projektes eventuell 2 weitere Seiten hinzuzufügen. Im Moment bleibt es bei vier Unterseiten plus der Hauptseite und 404-Seite, da der Fokus noch auf den Hauptkriterien der Aufgabenstellung liegt, anstatt inhaltlich auszuschweifen. Der Header beinhaltet das Logo sowie eine konsistente Navigationsleiste zur einfachen Orientierung.</p>
 
 ### Seiten
 
@@ -61,7 +61,7 @@
 </ul>
 
 
-### 2. Interaktivität (JavaScript)
+### Interaktivität (JavaScript)
 <ul>
 
 <li><strong>**Dark/Light Mode Toggle** — wechselt Farbschema und speichert Auswahl in `localStorage`</li>
@@ -76,8 +76,16 @@
 
 </ul>
 
+### Wireframes & Mockups
 
-### 3. Barrierefreiheit (WCAG)
+<ul>
+  <li><strong>Papierskizzen</strong> — Low-Fidelity Entwürfe für Desktop, Tablet und Mobile</li>
+  <li><strong>Wireframes</strong> — Digitale Umsetzung in Figma für alle Breakpoints</li>
+  <li><strong>Mockups</strong> — Visuelle Darstellung des finalen Designs in Figma (Desktop, Tablet, Mobile)</li>
+  <li><strong>Annotationen</strong> — Als zusätzliche Ergänzung wurden im Konzept Annotationen zu den Wireframes hinzugefügt, die einzelne UI-Elemente wie Navigation, Buttons und Layout-Bereiche gezielt beschreiben und deren Funktion erläutern.</li>
+</ul>
+
+### Barrierefreiheit (WCAG)
 <ul>
 
 <li><strong>`aria-label` auf Navigation, Buttons und Links</li>
@@ -93,7 +101,7 @@
 </ul>
 
 
-### 4.Farbkonzept
+### Farbkonzept
 
 <ul>
 
@@ -111,16 +119,18 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
 <hr />
 
-### 2.Typografie
+### Typografie
 
 
-<p> Urbanist — für alle Überschriften (H1–H6), modernes und markantes Profil
-Inter — für Fließtext, hervorragende Lesbarkeit
-Schriftgrößen responsiv je nach Gerät 
+<p> <ul>
+  <li><strong>Urbanist</strong> — für alle Überschriften (H1–H6), modernes und markantes Profil</li>
+  <li><strong>Inter</strong> — für Fließtext, hervorragende Lesbarkeit</li>
+  <li>Schriftgrößen responsiv je nach Gerät: Desktop 20px Body / Tablet 18px / Mobile 16px</li>
+</ul> 
 </p>
 
 
-## Projektorganisation
+### Projektorganisation
 <ul>
 
 - Versionsverwaltung via **Git & GitHub**
