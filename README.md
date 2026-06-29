@@ -98,6 +98,8 @@
 
 <li><strong>`rel="noopener"` auf allen externen Links</li>
 
+<li><strong>Webauftritt mit Lighthouse überprüft</li>
+
 </ul>
 
 
