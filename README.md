@@ -68,6 +68,8 @@
 
 <li><strong>**Logo-Wechsel** — `updateLogo()` tauscht Logo automatisch je nach aktivem Modus</li>
 
+<li><strong>Favicon</strong> — individuelles oranges T-Icon im Browser-Tab</li>
+
 <li><strong>**Zeitbasierte Begrüßung** — zeigt Guten Morgen / Ciao / Guten Abend je nach Tageszeit</li>
 
 <li><strong>**Typewriter-Effekt** — animierter Text auf der Startseite via Typed.js</li>
