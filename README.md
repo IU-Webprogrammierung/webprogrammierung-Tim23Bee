@@ -58,6 +58,11 @@
 
   <li><strong>CSS-Kommentare</strong> — strukturierte Kommentierung aller Sektionen</li>
 
+  <li><strong>CSS-Variablen</strong> — Farben zentral definiert via <code>:root</code> und <code>var()</code></li>
+
+  <li><strong>Meta Description</strong> — SEO-Optimierung auf allen Seiten via <code>&lt;meta name="description"&gt;</code></li>
+
+
 </ul>
 
 

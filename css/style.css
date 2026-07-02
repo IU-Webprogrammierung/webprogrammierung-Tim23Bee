@@ -2,7 +2,7 @@
 /* CSS Variablen                   */
 /* ============================== */
 
-root {
+:root {
     --bg-dark: #0F0F1B;
     --text-dark: #F1F1F3;
     --lila: #D0C3F4;
@@ -709,7 +709,7 @@ main {
 .kontakt-email {
     font-size: 28px;
     font-weight: 300;
-    color: var(--lola); /* <-- css variable#20 */
+    color: var(--lila); /* <-- css variable#20 */
 }
 
 
@@ -750,7 +750,7 @@ main {
 }
 
 html.light .hamburger span {
-    background-color: var(--lila); /* <-- css variable#21 */
+    background-color: var(--lila-dark); /* <-- css variable#21 */
 }
 
 
