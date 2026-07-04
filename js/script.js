@@ -2,7 +2,7 @@
 // /index.html Begrüßung nach Zeit des Tages// 
 
 const currentHour = new Date().getHours();
-let Begruessung = "Ciao!"; 
+let Begruessung = "Ciao!";
 
 if (currentHour >= 5 && currentHour < 12) {
     Begruessung = "Guten Morgen!";
@@ -67,8 +67,8 @@ function initThemeToggle() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
         document.documentElement.classList.add('light');
-        themeToggle.textContent ='🌑';
-     } else {
+        themeToggle.textContent = '🌑';
+    } else {
         themeToggle.textContent = '☀️';
     }
 
@@ -119,4 +119,25 @@ function initHamburgerMenu() {
         hamburgerBtn.setAttribute('aria-expanded', isOpen);
 
     });
+
+
+
+    // ====================================================//
+    // Interaktivität: Scroll Animation Interessen-Boxen
+    //====================================================//
+
+    const beobachter = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 150);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.interessen-box').forEach(box => {
+        beobachter.observe(box);
+    });
+
 }

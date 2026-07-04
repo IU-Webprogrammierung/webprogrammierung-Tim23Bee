@@ -50,7 +50,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 25px 60px 25px 40px;
-    border-bottom: 1px solid var(--gold); /* <-- css variable#3 */
+    border-bottom: 1px solid var(--gold);
+    /* <-- css variable#3 */
 }
 
 
@@ -82,7 +83,8 @@ header {
 /* Zahl in der navbar dauerhaft lila bleibt */
 
 .navbar a .nav-number {
-    color: var(--lila); /* <-- css variable#4 */
+    color: var(--lila);
+    /* <-- css variable#4 */
 
     transition: color 0.3s ease;
     min-width: 60px;
@@ -99,7 +101,8 @@ header {
     left: 38px;
     width: 0;
     height: 2px;
-    background-color: var(--lila); /* <-- css variable#5 */
+    background-color: var(--lila);
+    /* <-- css variable#5 */
     transition: width 0.3s ease;
 }
 
@@ -575,586 +578,586 @@ main {
     border: 1px solid var(--gold);
     border-radius: 12px;
     padding: 20px;
-    }
+}
 
 .cv-eintrag--highlight .cv-details strong {
-        color: var(--gold);
-    }
+    color: var(--gold);
+}
 
 .cv-eintrag--highlight .cv-zeit {
-        color: var(--gold);
+    color: var(--gold);
+}
+
+
+
+
+
+
+/* ============================== */
+/* Interessen-Seite                */
+/* ============================== */
+
+
+/* Intro */
+
+#interessen-intro {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#interessen-intro h1 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    color: #D0C3F4;
+    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
+#interessen-intro .intro-lead {
+    color: #F1F1F3;
+}
+
+
+/* Box-Liste */
+
+#interessen-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 700px;
+    margin-right: auto;
+}
+
+.interessen-box {
+    border-radius: 0px 30px 30px 0px;
+    padding: 30px 80px 30px 40px;
+
+}
+
+.interessen-box h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+
+}
+
+.interessen-box p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+/* Farbvarianten */
+
+.box-lila {
+    background-color: var(--lila);
+    /* <-- css variable#14 */
+    color: #0F0F1B;
+}
+
+.box-gelb {
+    background-color: var(--gold);
+    /* <-- css variable#15 */
+    color: #0F0F1B;
+}
+
+.box-outline {
+    background-color: transparent;
+    border: 2px solid #F1F1F3;
+    color: #F1F1F3;
+}
+
+
+
+
+
+
+
+/* ============================== */
+/* Projekte-Seite                */
+/* ============================== */
+
+
+/* Intro */
+
+#projekte-intro {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+#projekte-intro h1 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    color: #D0C3F4;
+    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
+#projekte-intro .intro-lead {
+    font-family: "Inter", sans-serif;
+    color: #F1F1F3;
+}
+
+
+/* Projekt-Einträge */
+
+#projekte-liste {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projekt-eintrag {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 20px;
+    padding: 50px 0;
+    border-top: 1px solid var(--gold);
+    /* <-- css variable#16 */
+}
+
+.projekt-eintrag:first-child {
+    border-top: 1px solid var(--gold);
+    /* <-- css variable#17 */
+}
+
+.projekt-jahr {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #D0C3F4;
+    margin: 0 0 18px 0;
+    grid-column: 1;
+}
+
+.projekt-eintrag h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #F1F1F3;
+    margin: 0 0 12px 0;
+    grid-column: 1;
+}
+
+.projekt-beschreibung {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #F1F1F3;
+    margin: 0;
+    font-weight: 400;
+    max-width: 500px;
+    grid-column: 1;
+    hyphens: auto;
+}
+
+
+/* "Mehr erfahren" Link */
+
+.projekt-link {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+    /* <-- css variable#18 */
+    text-decoration: none;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    align-self: center;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+/* ============================== */
+/* Kontakt-Seite                   */
+/* ============================== */
+
+/* Intro */
+
+#kontakt-intro {
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+#kontakt-intro h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #D0C3F4;
+    margin: 0 0 20px 20px;
+}
+
+#kontakt-intro .intro-lead {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #F1F1F3;
+    max-width: 620px;
+    margin: 0 auto 50px auto;
+}
+
+/* Icon-Liste */
+
+#kontakt-liste {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kontakt-liste li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.kontakt-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.kontakt-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* Farbvarianten */
+
+.icon-pinterest {
+    background-color: #f3f1f1;
+}
+
+.icon-instagram {
+    background-color: var(--gold);
+    /* <-- css variable#19 */
+}
+
+.icon-cosmos {
+    background-color: transparent;
+    border: 2px solid #F1F1F3;
+    border-radius: 50%
+}
+
+.icon-cosmos img {
+    width: 110%;
+    height: 100%;
+}
+
+/* Link-Text */
+
+#kontakt-liste a {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #F1F1F3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+/* E-Mail-Link */
+
+.kontakt-email {
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--lila);
+    /* <-- css variable#20 */
+}
+
+
+#kontakt-liste li:first-child {
+    margin-bottom: 110px
+}
+
+
+
+
+
+
+
+
+/* ===================*/
+/* Hamburger Button   */
+/* ===================*/
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--lila);
+    /* <-- css variable#21 */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+html.light .hamburger span {
+    background-color: var(--lila-dark);
+    /* <-- css variable#21 */
+}
+
+
+
+
+
+
+/* ==============*/
+/* BREAKPOINTS   */
+/* ==============*/
+
+/* =====================================================================*/
+/* BREAKPOINT 1: Tablet Mittelgroßer Bildschirm von 768px bis 1024px)    */
+/* =====================================================================*/
+
+@media (max-width: 1024px) {
+
+    #ueber-mich-intro h1,
+    #interessen-intro h1,
+    #projekte-intro h1,
+    .main-title {
+        font-size: 32px !important;
     }
 
-
-
-
-
-
-    /* ============================== */
-    /* Interessen-Seite                */
-    /* ============================== */
-
-
-    /* Intro */
-
-    #interessen-intro {
-        margin-bottom: 60px;
-        text-align: center;
+    .typewriter {
+        font-size: 50px;
     }
 
-    #interessen-intro h1 {
-        font-family: "Urbanist", sans-serif;
-        font-size: 60px;
-        font-weight: 800;
-        color: #D0C3F4;
-        margin: 0 0 10px 0;
-        letter-spacing: 3px;
-    }
-
-    #interessen-intro .intro-lead {
-        color: #F1F1F3;
-    }
-
-
-    /* Box-Liste */
-
-    #interessen-liste {
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
-        max-width: 700px;
-        margin-right: auto;
-    }
-
-    .interessen-box {
-        border-radius: 0px 30px 30px 0px;
-        padding: 30px 80px 30px 40px;
-
-    }
-
-    .interessen-box h2 {
-        font-family: "Urbanist", sans-serif;
-        font-size: 48px;
-        font-weight: 800;
-        margin: 0 0 15px 0;
-
-    }
-
-    .interessen-box p {
-        font-size: 20px;
-        line-height: 1.7;
-        margin: 0;
-        font-weight: 400;
-    }
-
-
-    /* Farbvarianten */
-
-    .box-lila {
-        background-color: var(--lila);
-        /* <-- css variable#14 */
-        color: #0F0F1B;
-    }
-
-    .box-gelb {
-        background-color: var(--gold);
-        /* <-- css variable#15 */
-        color: #0F0F1B;
-    }
-
-    .box-outline {
-        background-color: transparent;
-        border: 2px solid #F1F1F3;
-        color: #F1F1F3;
-    }
-
-
-
-
-
-
-
-    /* ============================== */
-    /* Projekte-Seite                */
-    /* ============================== */
-
-
-    /* Intro */
-
-    #projekte-intro {
-        margin-bottom: 80px;
-        text-align: center;
-    }
-
-    #projekte-intro h1 {
-        font-family: "Urbanist", sans-serif;
-        font-size: 60px;
-        font-weight: 800;
-        color: #D0C3F4;
-        margin: 0 0 10px 0;
-        letter-spacing: 3px;
-    }
-
-    #projekte-intro .intro-lead {
-        font-family: "Inter", sans-serif;
-        color: #F1F1F3;
-    }
-
-
-    /* Projekt-Einträge */
-
-    #projekte-liste {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .projekt-eintrag {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        align-items: start;
-        gap: 20px;
-        padding: 50px 0;
-        border-top: 1px solid var(--gold);
-        /* <-- css variable#16 */
-    }
-
-    .projekt-eintrag:first-child {
-        border-top: 1px solid var(--gold);
-        /* <-- css variable#17 */
-    }
-
-    .projekt-jahr {
-        font-family: "Inter", sans-serif;
+    .hero-description {
         font-size: 18px;
-        font-weight: 700;
-        color: #D0C3F4;
-        margin: 0 0 18px 0;
-        grid-column: 1;
     }
 
-    .projekt-eintrag h2 {
-        font-family: "Urbanist", sans-serif;
-        font-size: 48px;
-        font-weight: 600;
-        color: #F1F1F3;
-        margin: 0 0 12px 0;
-        grid-column: 1;
+    #fakten {
+        gap: 40px;
+    }
+}
+
+
+/* =======================================================*/
+/* Responsive Navigation: Mobile Breakpoint (unter 768)   */
+/* =======================================================*/
+
+@media (max-width: 767px) {
+
+    header {
+        padding: 15px 20px;
     }
 
-    .projekt-beschreibung {
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #F1F1F3;
-        margin: 0;
-        font-weight: 400;
-        max-width: 500px;
-        grid-column: 1;
-        hyphens: auto;
-    }
-
-
-    /* "Mehr erfahren" Link */
-
-    .projekt-link {
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        color: var(--gold);
-        /* <-- css variable#18 */
-        text-decoration: none;
-        grid-column: 2;
-        grid-row: 1 / 4;
-        align-self: center;
-        white-space: nowrap;
-        transition: color 0.3s ease;
-    }
-
-
-
-
-
-
-    /* ============================== */
-    /* Kontakt-Seite                   */
-    /* ============================== */
-
-    /* Intro */
-
-    #kontakt-intro {
-        text-align: center;
-        margin-bottom: 140px;
-    }
-
-    #kontakt-intro h1 {
-        font-size: 60px;
-        font-weight: 800;
-        color: #D0C3F4;
-        margin: 0 0 20px 20px;
-    }
-
-    #kontakt-intro .intro-lead {
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #F1F1F3;
-        max-width: 620px;
-        margin: 0 auto 50px auto;
-    }
-
-    /* Icon-Liste */
-
-    #kontakt-liste {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 45px;
-        padding: 0;
-        margin: 0;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #kontakt-liste li {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .kontakt-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        overflow: hidden;
-    }
-
-    .kontakt-icon img {
-        width: 70%;
-        height: 70%;
-        object-fit: contain;
-    }
-
-    /* Farbvarianten */
-
-    .icon-pinterest {
-        background-color: #f3f1f1;
-    }
-
-    .icon-instagram {
-        background-color: var(--gold);
-        /* <-- css variable#19 */
-    }
-
-    .icon-cosmos {
-        background-color: transparent;
-        border: 2px solid #F1F1F3;
-        border-radius: 50%
-    }
-
-    .icon-cosmos img {
-        width: 110%;
-        height: 100%;
-    }
-
-    /* Link-Text */
-
-    #kontakt-liste a {
-        font-family: "Inter", sans-serif;
-        font-size: 28px;
-        font-weight: 700;
-        color: #F1F1F3;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-
-    /* E-Mail-Link */
-
-    .kontakt-email {
-        font-size: 28px;
-        font-weight: 300;
-        color: var(--lila);
-        /* <-- css variable#20 */
-    }
-
-
-    #kontakt-liste li:first-child {
-        margin-bottom: 110px
-    }
-
-
-
-
-
-
-
-
-    /* ===================*/
-    /* Hamburger Button   */
-    /* ===================*/
 
     .hamburger {
+        display: flex;
+    }
+
+
+    .navbar {
         display: none;
         flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bg-dark);
+        /* <-- css variable#22 */
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        z-index: 1000;
         padding: 0;
-        z-index: 1001;
+
     }
 
-    .hamburger span {
+    .navbar a {
+        display: grid;
+        grid-template-columns: 60px 5fr;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+        font-size: 28px;
+        white-space: normal;
+        width: 220px;
+    }
+
+    .navbar a .nav-number {
+        width: 50px;
+        text-align: right;
+        display: inline-block;
+    }
+
+    .navbar a::after {
+        display: none;
+    }
+
+
+    .navbar.active {
+        display: flex;
+    }
+
+    html.light .navbar {
+        background-color: var(--bg-light);
+        /* <-- css variable#23 */
+    }
+
+    html.light .navbar a {
+        color: var(--text-light);
+        /* <-- css variable#24 */
+    }
+
+
+    #theme-toggle {
+        margin-top: 20px;
+        font-size: 44px;
+    }
+
+
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+
+    #ueber-mich-intro h1,
+    #interessen-intro h1,
+    #projekte-intro h1,
+    .main-title {
+        font-size: 48px !important;
+    }
+
+
+    #hero-section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .hero-text {
         width: 100%;
-        height: 3px;
-        background-color: var(--lila);
-        /* <-- css variable#21 */
-        border-radius: 10px;
-        transition: all 0.3s ease-in-out;
+        max-width: 100%;
     }
 
-    html.light .hamburger span {
-        background-color: var(--lila-dark);
-        /* <-- css variable#21 */
+    .hero-image-card {
+        margin: 30px auto 0 auto;
+        max-width: 280px;
     }
 
+    .cta-container {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 35px;
+    }
 
-
-
-
-
-    /* ==============*/
-    /* BREAKPOINTS   */
-    /* ==============*/
-
-    /* =====================================================================*/
-    /* BREAKPOINT 1: Tablet Mittelgroßer Bildschirm von 768px bis 1024px)    */
-    /* =====================================================================*/
-
-    @media (max-width: 1024px) {
-
-        #ueber-mich-intro h1,
-        #interessen-intro h1,
-        #projekte-intro h1,
-        .main-title {
-            font-size: 32px !important;
-        }
-
-        .typewriter {
-            font-size: 50px;
-        }
-
-        .hero-description {
-            font-size: 18px;
-        }
-
-        #fakten {
-            gap: 40px;
-        }
+    .btn-primary,
+    .btn-secondary {
+        width: 230px;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: border-box;
+        justify-content: center;
     }
 
 
-    /* =======================================================*/
-    /* Responsive Navigation: Mobile Breakpoint (unter 768)   */
-    /* =======================================================*/
-
-    @media (max-width: 767px) {
-
-        header {
-            padding: 15px 20px;
-        }
+    .hero-container {
+        height: auto;
+        min-height: calc(100vh - 140px);
+        padding: 20px 20px;
+    }
 
 
-        .hamburger {
-            display: flex;
-        }
+    /* About-Seite Mobile */
+
+    main {
+        padding: 30px 20px 50px 20px;
+    }
+
+    #fakten {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .fakten-box {
+        padding: 12px 20px 25px;
+        flex: none;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .fakt-highlight {
+        font-size: 28px;
+    }
+
+    #about h2 {
+        font-size: 26px;
+    }
+
+    #about p {
+        font-size: 18px;
+        text-align: left;
+        hyphens: none;
+    }
+
+    #about .cta-container {
+        width: 100%;
+        left: 0;
+        transform: none;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
 
 
-        .navbar {
-            display: none;
-            flex-direction: column;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: var(--bg-dark);
-            /* <-- css variable#22 */
-            justify-content: center;
-            align-items: center;
-            gap: 45px;
-            z-index: 1000;
-            padding: 0;
+    #ziel {
+        padding: 40px 20px;
+        margin: 0 -20px -50px -20px;
+    }
 
-        }
-
-        .navbar a {
-            display: grid;
-            grid-template-columns: 60px 5fr;
-            align-items: center;
-            gap: 15px;
-            text-align: left;
-            font-size: 28px;
-            white-space: normal;
-            width: 220px;
-        }
-
-        .navbar a .nav-number {
-            width: 50px;
-            text-align: right;
-            display: inline-block;
-        }
-
-        .navbar a::after {
-            display: none;
-        }
+    #ziel h2 {
+        font-size: 28px;
+    }
 
 
-        .navbar.active {
-            display: flex;
-        }
-
-        html.light .navbar {
-            background-color: var(--bg-light);
-            /* <-- css variable#23 */
-        }
-
-        html.light .navbar a {
-            color: var(--text-light);
-            /* <-- css variable#24 */
-        }
-
-
-        #theme-toggle {
-            margin-top: 20px;
-            font-size: 44px;
-        }
-
-
-        .hamburger.active span:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
-        }
-
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active span:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-        }
-
-
-        #ueber-mich-intro h1,
-        #interessen-intro h1,
-        #projekte-intro h1,
-        .main-title {
-            font-size: 48px !important;
-        }
-
-
-        #hero-section {
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            gap: 60px;
-        }
-
-        .hero-text {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .hero-image-card {
-            margin: 30px auto 0 auto;
-            max-width: 280px;
-        }
-
-        .cta-container {
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 35px;
-        }
-
-        .btn-primary,
-        .btn-secondary {
-            width: 230px;
-            margin: 0 auto;
-            text-align: center;
-            box-sizing: border-box;
-            justify-content: center;
-        }
-
-
-        .hero-container {
-            height: auto;
-            min-height: calc(100vh - 140px);
-            padding: 20px 20px;
-        }
-
-
-/* About-Seite Mobile */
-
-        main {
-            padding: 30px 20px 50px 20px;
-        }
-
-        #fakten {
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 50px;
-        }
-
-        .fakten-box {
-            padding: 12px 20px 25px;
-            flex: none;
-            width: 75%;
-            margin: 0 auto;
-            text-align: center;
-
-        }
-
-        .fakt-highlight {
-            font-size: 28px;
-        }
-
-        #about h2 {
-            font-size: 26px;
-        }
-
-        #about p {
-            font-size: 18px;
-            text-align: left;
-            hyphens: none;
-        }
-
-        #about .cta-container {
-            width: 100%;
-            left: 0;
-            transform: none;
-            margin-top: 40px;
-            margin-bottom: 30px;
-        }
-
-
-        #ziel {
-            padding: 40px 20px;
-            margin: 0 -20px -50px -20px;
-        }
-
-        #ziel h2 {
-            font-size: 28px;
-        }
-
-
-/* Curriculum Mobile */
+    /* Curriculum Mobile */
 
     #cv-intro h1 {
         font-size: 40px;
@@ -1177,260 +1180,265 @@ main {
     }
 
 
-/* Projekte-Seite Mobile */
+    /* Projekte-Seite Mobile */
 
-        .projekt-eintrag {
-            grid-template-columns: 1fr;
-            gap: 12px;
-            padding: 35px 0;
-        }
-
-        .projekt-eintrag h2 {
-            font-size: 28px;
-        }
-
-        .projekt-beschreibung {
-            font-size: 16px;
-            max-width: 100%;
-            hyphens: none;
-        }
-
-        .projekt-link {
-            grid-column: 1;
-            grid-row: auto;
-            justify-self: start;
-            margin-top: 8px;
-        }
-
+    .projekt-eintrag {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 35px 0;
     }
 
-
-    /* ==============================  */
-    /* Hover nur auf Desktop mit Maus  */
-    /* ==============================  */
-
-    @media (hover: hover) {
-
-        /* Dark Mode */
-        .logo img:hover {
-            transform: scale(1.07) rotate(3deg);
-        }
-
-        .navbar a:hover {
-            color: var(--lila);
-            /* <-- css variable#25 */
-        }
-
-        .navbar a:hover::after {
-            width: calc(100% - 38px);
-        }
-
-        #theme-toggle:hover {
-            border-color: var(--lila);
-            /* <-- css variable#26 */
-        }
-
-        .btn-primary:hover {
-            background-color: var(--lila);
-            /* <-- css variable#27 */
-            border-color: var(--lila);
-            /* <-- css variable#28 */
-            color: #0F0F1B;
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--gold);
-            /* <-- css variable#29 */
-            color: var(--gold);
-            /* <-- css variable#30 */
-            background-color: rgba(248, 167, 45, 0.1);
-        }
-
-        .projekt-link:hover {
-            color: var(--lila);
-            /* <-- css variable#31 */
-        }
-
-        #kontakt-liste a:hover {
-            color: var(--lila);
-            /* <-- css variable#32 */
-        }
-
-        .kontakt-email:hover {
-            color: var(--gold);
-            /* <-- css variable#33 */
-        }
-
-        /* Light Mode */
-        html.light .btn-primary:hover {
-            background-color: var(--lila-dark);
-            /* <-- css variable#34 */
-            border-color: var(--lila-dark);
-            /* <-- css variable#35 */
-            color: #ffffff;
-        }
-
-        html.light .navbar a:hover {
-            color: var(--lila-dark);
-            /* <-- css variable#36 */
-        }
-
-        html.light #theme-toggle:hover {
-            border-color: var(--text-light);
-            /* <-- css variable#37 */
-        }
-
-        html.light .projekt-link:hover {
-            color: var(--text-light);
-            /* <-- css variable#38 */
-        }
-
-        html.light #kontakt-liste a:hover {
-            color: var(--lila-dark);
-            /* <-- css variable#39 */
-        }
-
-        html.light .kontakt-email:hover {
-            color: var(--lila-dark);
-            /* <-- css variable#40 */
-        }
+    .projekt-eintrag h2 {
+        font-size: 28px;
     }
 
-
-
-    /* ============================== */
-    /* Light Mode                      */
-    /* ============================== */
-
-    html.light body {
-        background-color: var(--bg-light);
-        /* <-- css variable#41 */
-        color: var(--text-light);
-        /* <-- css variable#42 */
+    .projekt-beschreibung {
+        font-size: 16px;
+        max-width: 100%;
+        hyphens: none;
     }
 
-    html.light .main-title,
-    html.light .nav-number,
-    html.light .fakt-highlight,
-    html.light .projekt-jahr,
-    html.light .kontakt-email,
-    html.light #ueber-mich-intro h1,
-    html.light #interessen-intro h1,
-    html.light #projekte-intro h1,
-    html.light #kontakt-intro h1 {
-        color: var(--lila-dark); /* <-- css variable#43 */
+    .projekt-link {
+        grid-column: 1;
+        grid-row: auto;
+        justify-self: start;
+        margin-top: 8px;
     }
 
+}
 
 
-    /* Header & Navigation */
+/* ==============================  */
+/* Hover nur auf Desktop mit Maus  */
+/* ==============================  */
 
-    html.light header {
-        border-bottom: 2px solid var(--text-light);
-        /* <-- css variable#44 */
+@media (hover: hover) {
+
+    /* Dark Mode */
+    .logo img:hover {
+        transform: scale(1.07) rotate(3deg);
     }
 
-    html.light .navbar a {
-        color: var(--text-light);
-        /* <-- css variable#45 */
+    .navbar a:hover {
+        color: var(--lila);
+        /* <-- css variable#25 */
     }
 
-
-
-    /* Startseite */
-
-    html.light .typewriter {
-        color: var(--text-light);
-        /* <-- css variable#46 */
+    .navbar a:hover::after {
+        width: calc(100% - 38px);
     }
 
-    html.light .intro-lead {
-        color: var(--text-light);
-        /* <-- css variable#47 */
+    #theme-toggle:hover {
+        border-color: var(--lila);
+        /* <-- css variable#26 */
     }
 
-    html.light .hero-description {
-        color: var(--text-light);
-        /* <-- css variable#48 */
+    .btn-primary:hover {
+        background-color: var(--lila);
+        /* <-- css variable#27 */
+        border-color: var(--lila);
+        /* <-- css variable#28 */
+        color: #0F0F1B;
     }
 
-    html.light .btn-secondary {
-        color: var(--text-light);
-        /* <-- css variable#49 */
-        border-color: var(--text-light);
-        /* <-- css variable#50 */
+    .btn-secondary:hover {
+        border-color: var(--gold);
+        /* <-- css variable#29 */
+        color: var(--gold);
+        /* <-- css variable#30 */
+        background-color: rgba(248, 167, 45, 0.1);
     }
 
+    .projekt-link:hover {
+        color: var(--lila);
+        /* <-- css variable#31 */
+    }
 
-    html.light .navbar a::after {
+    #kontakt-liste a:hover {
+        color: var(--lila);
+        /* <-- css variable#32 */
+    }
+
+    .kontakt-email:hover {
+        color: var(--gold);
+        /* <-- css variable#33 */
+    }
+
+    /* Light Mode */
+    html.light .btn-primary:hover {
         background-color: var(--lila-dark);
-        /* <-- css variable#51 */
+        /* <-- css variable#34 */
+        border-color: var(--lila-dark);
+        /* <-- css variable#35 */
+        color: #ffffff;
     }
 
-
-    html.light #theme-toggle {
-        border-color: transparent;
+    html.light .navbar a:hover {
+        color: var(--lila-dark);
+        /* <-- css variable#36 */
     }
 
-
-
-    /* About-Seite */
-
-    html.light #ueber-mich-intro h2 {
-        color: var(--text-light); /* <-- css variable#52 */
+    html.light #theme-toggle:hover {
+        border-color: var(--text-light);
+        /* <-- css variable#37 */
     }
 
-    html.light .fakten-box {
-        background-color: rgb(88, 81, 223);
+    html.light .projekt-link:hover {
+        color: var(--text-light);
+        /* <-- css variable#38 */
     }
 
-    html.light .fakten-box h3,
-    html.light .fakt-highlight {
-        color: #FFFFFF;
+    html.light #kontakt-liste a:hover {
+        color: var(--lila-dark);
+        /* <-- css variable#39 */
     }
 
-    html.light #about h2 {
-        color: #0f1b19;
-    }
+    html.light .kontakt-email:hover {
+        color: var(--lila-dark);
+        /* <-- css variable#40 */
+    }    
+}
 
-    html.light #about p {
-        color: var(--text-light); /* <-- css variable#53 */
-    }
 
-    html.light #ziel h2 {
-        color: var(--text-light); /* <-- css variable#54 */
-    } 
 
-    html.light #ziel {
-        border-top: 2px solid var(--text-light); /* <-- css variable#55 */
-    }
+/* ============================== */
+/* Light Mode                      */
+/* ============================== */
 
-    /* Light Mode Curriculum */
+html.light body {
+    background-color: var(--bg-light);
+    /* <-- css variable#41 */
+    color: var(--text-light);
+    /* <-- css variable#42 */
+}
+
+html.light .main-title,
+html.light .nav-number,
+html.light .fakt-highlight,
+html.light .projekt-jahr,
+html.light .kontakt-email,
+html.light #ueber-mich-intro h1,
+html.light #interessen-intro h1,
+html.light #projekte-intro h1,
+html.light #kontakt-intro h1 {
+    color: var(--lila-dark);
+    /* <-- css variable#43 */
+}
+
+
+
+/* Header & Navigation */
+
+html.light header {
+    border-bottom: 2px solid var(--text-light);
+    /* <-- css variable#44 */
+}
+
+html.light .navbar a {
+    color: var(--text-light);
+    /* <-- css variable#45 */
+}
+
+
+
+/* Startseite */
+
+html.light .typewriter {
+    color: var(--text-light);
+    /* <-- css variable#46 */
+}
+
+html.light .intro-lead {
+    color: var(--text-light);
+    /* <-- css variable#47 */
+}
+
+html.light .hero-description {
+    color: var(--text-light);
+    /* <-- css variable#48 */
+}
+
+html.light .btn-secondary {
+    color: var(--text-light);
+    /* <-- css variable#49 */
+    border-color: var(--text-light);
+    /* <-- css variable#50 */
+}
+
+
+html.light .navbar a::after {
+    background-color: var(--lila-dark);
+    /* <-- css variable#51 */
+}
+
+
+html.light #theme-toggle {
+    border-color: transparent;
+}
+
+
+
+/* About-Seite */
+
+html.light #ueber-mich-intro h2 {
+    color: var(--text-light);
+    /* <-- css variable#52 */
+}
+
+html.light .fakten-box {
+    background-color: rgb(88, 81, 223);
+}
+
+html.light .fakten-box h3,
+html.light .fakt-highlight {
+    color: #FFFFFF;
+}
+
+html.light #about h2 {
+    color: #0f1b19;
+}
+
+html.light #about p {
+    color: var(--text-light);
+    /* <-- css variable#53 */
+}
+
+html.light #ziel h2 {
+    color: var(--text-light);
+    /* <-- css variable#54 */
+}
+
+html.light #ziel {
+    border-top: 2px solid var(--text-light);
+    /* <-- css variable#55 */
+}
+
+/* Light Mode Curriculum */
 
 html.light #cv-intro h2 {
     color: var(--lila-dark);
 }
- 
+
 html.light #cv-profil p {
     color: var(--text-light);
 }
- 
+
 html.light .cv-details strong {
     color: var(--text-light);
 }
- 
+
 html.light .cv-ort {
     color: rgba(15, 15, 27, 0.5);
 }
- 
+
 html.light .cv-eintrag {
     border-bottom: 1px solid var(--lila-dark)
 }
- 
+
 html.light .cv-zeit {
     color: var(--lila-dark);
 }
- 
+
 html.light #cv-intro h1 {
     color: var(--lila-dark);
 }
@@ -1447,78 +1455,85 @@ html.light .cv-portrait {
 }
 
 
-    /* Interessen-Seite */
+/* Interessen-Seite */
 
-    html.light #interessen-intro .intro-lead {
-        color: var(--text-light);
-        /* <-- css variable#56 */
-    }
+html.light #interessen-intro .intro-lead {
+    color: var(--text-light);
+    /* <-- css variable#56 */
+}
 
-    html.light .box-outline {
-        border-color: #0f1b11;
-        color: var(--text-light); /* <-- css variable#57 */
-    }
-
-
-
-    /* Projekte-Seite */
-
-    html.light #projekte-intro .intro-lead {
-        color: var(--text-light); /* <-- css variable#58 */
-    }
-
-    html.light .projekt-eintrag h2 {
-        color: var(--text-light); /* <-- css variable#59 */
-    }
-
-    html.light .projekt-eintrag {
-        border-top: 2px solid var(--text-light); /* <-- css variable#60 */
-    }
-
-    html.light .projekt-beschreibung {
-        color: var(--text-light); /* <-- css variable#61 */
-    }
-
-    html.light .projekt-link {
-        color: var(--lila-dark); /* <-- css variable#62 */
-    }
+html.light .box-outline {
+    border-color: #0f1b11;
+    color: var(--text-light);
+    /* <-- css variable#57 */
+}
 
 
 
-    /* Kontakt-Seite */
+/* Projekte-Seite */
 
-    html.light #kontakt-intro .intro-lead {
-        color: var(--text-light);
-        /* <-- css variable#63 */
-    }
+html.light #projekte-intro .intro-lead {
+    color: var(--text-light);
+    /* <-- css variable#58 */
+}
 
-    html.light #kontakt-liste a {
-        color: #0f1b0f;
-    }
+html.light .projekt-eintrag h2 {
+    color: var(--text-light);
+    /* <-- css variable#59 */
+}
 
-    html.light .icon-cosmos {
-        color: var(--text-light);
-        /* <-- css variable#64 */
-    }
+html.light .projekt-eintrag {
+    border-top: 2px solid var(--text-light);
+    /* <-- css variable#60 */
+}
 
+html.light .projekt-beschreibung {
+    color: var(--text-light);
+    /* <-- css variable#61 */
+}
 
-
-    /* Footer */
-
-    html.light footer {
-        border-top: 2px solid var(--text-light);
-        /* <-- css variable#65 */
-    }
-
-    html.light footer small {
-        color: var(--text-light);
-        /* <-- css variable#66 */
-    }
+html.light .projekt-link {
+    color: var(--lila-dark);
+    /* <-- css variable#62 */
+}
 
 
-    /* ============================== */
-    /* Scroll Animation Interessen    */
-    /* ============================== */
+
+/* Kontakt-Seite */
+
+html.light #kontakt-intro .intro-lead {
+    color: var(--text-light);
+    /* <-- css variable#63 */
+}
+
+html.light #kontakt-liste a {
+    color: #0f1b0f;
+}
+
+html.light .icon-cosmos {
+    color: var(--text-light);
+    /* <-- css variable#64 */
+}
+
+
+
+/* Footer */
+
+html.light footer {
+    border-top: 2px solid var(--text-light);
+    /* <-- css variable#65 */
+}
+
+html.light footer small {
+    color: var(--text-light);
+    /* <-- css variable#66 */
+}
+
+
+
+/* ============================== */
+/* Scroll Animation Interessen    */
+/* ============================== */
 
 .interessen-box {
     opacity: 0;
@@ -1531,3 +1546,24 @@ html.light .cv-portrait {
     transform: translateX(0);
 }
 
+.interessen-box:hover {
+        transform: translateX(10px);
+        transition: transform 0.5s ease;
+    }
+
+
+
+/* ============================== */
+/* Scroll Animation Projekte      */
+/* ============================== */
+
+.projekt-eintrag {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.projekt-eintrag.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
