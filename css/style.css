@@ -1516,3 +1516,18 @@ html.light .cv-portrait {
     }
 
 
+    /* ============================== */
+    /* Scroll Animation Interessen    */
+    /* ============================== */
+
+.interessen-box {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.interessen-box.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
