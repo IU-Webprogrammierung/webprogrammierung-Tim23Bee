@@ -140,4 +140,23 @@ function initHamburgerMenu() {
         beobachter.observe(box);
     });
 
+    
+// ====================================================//
+// Scroll Animation Projekt-Einträge
+//====================================================//
+
+const projektBeobachter = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, index * 200);
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.projekt-eintrag').forEach(eintrag => {
+    projektBeobachter.observe(eintrag);
+});
+    
 }
