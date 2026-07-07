@@ -594,7 +594,7 @@ main {
 
 #back-to-top {
     position: fixed;
-    bottom: 8%;
+    bottom: 70px;
     right: 40px;
     width: 50px;
     height: 50px;
@@ -607,6 +607,11 @@ main {
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 999;
+    display: none;
+}
+
+.curriculum-page #back-to-top {
+    display: block;
 }
 
 #back-to-top.visible {
@@ -1246,7 +1251,8 @@ html.light .hamburger span {
     }
 
     .navbar a:hover {
-        color: var(--lila); /* <-- css variable#25 */
+        color: var(--lila);
+        /* <-- css variable#25 */
     }
 
     .navbar a:hover::after {
@@ -1254,79 +1260,94 @@ html.light .hamburger span {
     }
 
     #theme-toggle:hover {
-        border-color: var(--lila); /* <-- css variable#26 */
+        border-color: var(--lila);
+        /* <-- css variable#26 */
     }
 
     .btn-primary:hover {
-        background-color: var(--lila); /* <-- css variable#27 */
-        border-color: var(--lila); /* <-- css variable#28 */
+        background-color: var(--lila);
+        /* <-- css variable#27 */
+        border-color: var(--lila);
+        /* <-- css variable#28 */
         color: #0F0F1B;
     }
 
     .btn-secondary:hover {
-        border-color: var(--gold); /* <-- css variable#29 */
-        color: var(--gold); /* <-- css variable#30 */
+        border-color: var(--gold);
+        /* <-- css variable#29 */
+        color: var(--gold);
+        /* <-- css variable#30 */
         background-color: rgba(248, 167, 45, 0.1);
     }
 
     .projekt-link:hover {
-        color: var(--lila); /* <-- css variable#31 */
+        color: var(--lila);
+        /* <-- css variable#31 */
     }
 
     #kontakt-liste a:hover {
-        color: var(--lila); /* <-- css variable#32 */
+        color: var(--lila);
+        /* <-- css variable#32 */
     }
 
     .kontakt-email:hover {
-        color: var(--gold); /* <-- css variable#33 */
+        color: var(--gold);
+        /* <-- css variable#33 */
     }
 
     #kontakt-liste li:hover .kontakt-icon {
-    animation: huepfen 0.9s ease;
-   }
+        animation: huepfen 0.9s ease;
+    }
 
-   .kontakt-icon {
-    transition: transform 0.3s ease;
-}
+    .kontakt-icon {
+        transition: transform 0.3s ease;
+    }
 
-#kontakt-liste li:hover .kontakt-icon {
-    transform: translateY(-10px);
-}
+    #kontakt-liste li:hover .kontakt-icon {
+        transform: translateY(-10px);
+    }
 
-.cv-eintrag {
-    transition: transform 0.3s ease;
-}
+    .cv-eintrag {
+        transition: transform 0.3s ease;
+    }
 
-.cv-eintrag:hover {
-    transform: translateY(-5px);
-}
+    .cv-eintrag:hover {
+        transform: translateY(-5px);
+    }
 
     /* Light Mode */
     html.light .btn-primary:hover {
-        background-color: var(--lila-dark); /* <-- css variable#34 */
-        border-color: var(--lila-dark); /* <-- css variable#35 */
+        background-color: var(--lila-dark);
+        /* <-- css variable#34 */
+        border-color: var(--lila-dark);
+        /* <-- css variable#35 */
         color: #ffffff;
     }
 
     html.light .navbar a:hover {
-        color: var(--lila-dark); /* <-- css variable#36 */
+        color: var(--lila-dark);
+        /* <-- css variable#36 */
     }
 
     html.light #theme-toggle:hover {
-        border-color: var(--text-light); /* <-- css variable#37 */
+        border-color: var(--text-light);
+        /* <-- css variable#37 */
     }
 
     html.light .projekt-link:hover {
-        color: var(--text-light); /* <-- css variable#38 */
+        color: var(--text-light);
+        /* <-- css variable#38 */
     }
 
     html.light #kontakt-liste a:hover {
-        color: var(--lila-dark); /* <-- css variable#39 */
+        color: var(--lila-dark);
+        /* <-- css variable#39 */
     }
 
     html.light .kontakt-email:hover {
-        color: var(--lila-dark); /* <-- css variable#40 */
-    }    
+        color: var(--lila-dark);
+        /* <-- css variable#40 */
+    }
 }
 
 
@@ -1581,9 +1602,9 @@ html.light footer small {
 }
 
 .interessen-box:hover {
-        transform: translateX(10px);
-        transition: transform 0.5s ease;
-    }
+    transform: translateX(10px);
+    transition: transform 0.5s ease;
+}
 
 
 
@@ -1620,6 +1641,7 @@ html.light footer small {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
