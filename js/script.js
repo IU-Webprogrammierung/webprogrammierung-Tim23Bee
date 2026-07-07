@@ -148,5 +148,30 @@ const projektBeobachter = new IntersectionObserver((entries) => {
 document.querySelectorAll('.projekt-eintrag').forEach(eintrag => {
     projektBeobachter.observe(eintrag);
 });
-    
+ 
+// ====================================================//
+// Back to Top Button
+//====================================================//
+
+const backToTop = document.getElementById('back-to-top');
+
+if (backToTop) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+        });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+
+
+
+
+
 }

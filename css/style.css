@@ -588,7 +588,30 @@ main {
     color: var(--gold);
 }
 
+/* =====================================*/
+/* Back to Top Button Curriculum Seite  */
+/* =====================================*/
 
+#back-to-top {
+    position: fixed;
+    bottom: 8%;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--gold);
+    color: #0F0F1B;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+}
 
 
 
@@ -1461,6 +1484,10 @@ html.light .cv-portrait {
     border-color: var(--lila-dark);
 }
 
+html.light #back-to-top {
+    background-color: var(--lila-dark);
+    color: #ffffff;
+}
 
 /* Interessen-Seite */
 
