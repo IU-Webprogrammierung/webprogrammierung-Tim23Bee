@@ -1208,6 +1208,10 @@ html.light .hamburger span {
         max-width: 100%;
     }
 
+     #back-to-top {
+        display: none !important;
+    }
+
 
     /* Projekte-Seite Mobile */
 
