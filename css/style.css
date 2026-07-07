@@ -594,7 +594,8 @@ main {
 
 
 /* ============================== */
-/* Interessen-Seite                */
+/* Interessen-Seite               */
+/* CSS Nesting umgesetzt          */
 /* ============================== */
 
 
@@ -603,23 +604,20 @@ main {
 #interessen-intro {
     margin-bottom: 60px;
     text-align: center;
+
+    & h1 {
+        font-family: "Urbanist", sans-serif;
+        font-size: 60px;
+        font-weight: 800;
+        color: var(--lila);
+        margin: 0 0 10px 0;
+        letter-spacing: 3px;
+    }
+
+    & .intro-lead {
+        color: #F1F1F3;
+    }
 }
-
-#interessen-intro h1 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 60px;
-    font-weight: 800;
-    color: #D0C3F4;
-    margin: 0 0 10px 0;
-    letter-spacing: 3px;
-}
-
-#interessen-intro .intro-lead {
-    color: #F1F1F3;
-}
-
-
-/* Box-Liste */
 
 #interessen-liste {
     display: flex;
@@ -632,43 +630,48 @@ main {
 .interessen-box {
     border-radius: 0px 30px 30px 0px;
     padding: 30px 80px 30px 40px;
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 
-}
+    & h2 {
+        font-family: "Urbanist", sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        margin: 0 0 15px 0;
+    }
 
-.interessen-box h2 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 48px;
-    font-weight: 800;
-    margin: 0 0 15px 0;
+    & p {
+        font-size: 20px;
+        line-height: 1.7;
+        margin: 0;
+        font-weight: 400;
+    }
 
-}
+    &.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
-.interessen-box p {
-    font-size: 20px;
-    line-height: 1.7;
-    margin: 0;
-    font-weight: 400;
-}
+    &.visible:hover {
+        transform: translateX(10px);
+    }
 
+    &.box-lila {
+        background-color: var(--lila);
+        color: #0F0F1B;
+    }
 
-/* Farbvarianten */
+    &.box-gelb {
+        background-color: var(--gold);
+        color: #0F0F1B;
+    }
 
-.box-lila {
-    background-color: var(--lila);
-    /* <-- css variable#14 */
-    color: #0F0F1B;
-}
-
-.box-gelb {
-    background-color: var(--gold);
-    /* <-- css variable#15 */
-    color: #0F0F1B;
-}
-
-.box-outline {
-    background-color: transparent;
-    border: 2px solid #F1F1F3;
-    color: #F1F1F3;
+    &.box-outline {
+        background-color: transparent;
+        border: 2px solid #F1F1F3;
+        color: #F1F1F3;
+    }
 }
 
 
@@ -1570,4 +1573,28 @@ html.light footer small {
 .projekt-eintrag.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ============================== */
+/* Hero Einblende Animation       */
+/* ============================== */
+
+.hero-text {
+    animation: slideIn 1s ease forwards;
+}
+
+.hero-image-card {
+    animation: slideIn 1s ease 0.3s forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

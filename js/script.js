@@ -25,11 +25,6 @@ if (document.getElementById('greeting-typewriter')) {
 }
 
 
-
-
-
-
-
 // =============================================== //
 // /komponenten header und footer laden //  
 
@@ -49,11 +44,6 @@ async function loadComponents(selector, path) {
     }
 
 }
-
-
-
-
-
 
 
 // ====================================================//

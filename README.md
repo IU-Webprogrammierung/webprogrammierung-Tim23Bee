@@ -62,6 +62,8 @@
 
   <li><strong>Meta Description</strong> — SEO-Optimierung auf allen Seiten via <code>&lt;meta name="description"&gt;</code></li>
 
+  <li><strong>CSS Nesting</strong> — Interessen-Seite als Beispiel für modernes CSS Nesting</li>
+
 
 </ul>
 
