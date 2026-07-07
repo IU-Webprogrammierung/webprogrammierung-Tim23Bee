@@ -1267,6 +1267,13 @@ html.light .hamburger span {
     transform: translateY(-10px);
 }
 
+.cv-eintrag {
+    transition: transform 0.3s ease;
+}
+
+.cv-eintrag:hover {
+    transform: translateY(-5px);
+}
 
     /* Light Mode */
     html.light .btn-primary:hover {
