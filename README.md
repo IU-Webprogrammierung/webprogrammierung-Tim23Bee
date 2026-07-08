@@ -12,12 +12,13 @@
 <hr/>
 
 
-1. Konzept & Zielsetzung
+<h2>1. Konzept & Zielsetzung</h2>
 
 <p>Ziel des Projekts ist die Erstellung einer minimalistischen digitalen Visitenkarte. Die Website dient als zentrale Plattform, um Qualifikationen und Interessen kompakt zu präsentieren. Das Portfolio umfasst eine Hauptseite sowie vier themenspezifische Unterseiten, eine Curriculum Seite und eine 404 Seite.</p>
 
 
 ### Wireframes & Mockups
+
 <ul>
 
   <li><strong>Papierskizzen</strong> — Low-Fidelity Entwürfe für Desktop Tablet und Mobile</li>
@@ -56,7 +57,7 @@
 
 <h2>2. Technische Umsetzung & Features</h2>
 
-<h3>2.1 HTML & CSS Architektur</h3>
+### HTML & CSS Architektur
 
 <ul>
 
@@ -87,7 +88,7 @@
 </ul>
 
 
-2.2 Typografie
+### Typografie
 
 <ul>
   <li><strong>Urbanist</strong> — für alle Überschriften (H1–H6), modernes und markantes Profil</li>
@@ -97,7 +98,7 @@
   <li>Schriftgrößen responsiv: Desktop 20px / Tablet 18px / Mobile 16px</li>
 
 
-2.3 Farbkonzept
+### Farbkonzept
 
 <ul>
 
@@ -114,7 +115,7 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 </ul>
 
 
-2.4 Interaktivität (JavaScript)
+### Interaktivität (JavaScript)
 
 <ul>
 
@@ -133,7 +134,7 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 </ul>
 
 
-2.5 Micro-Animationen
+### Micro-Animationen
 
 <ul>
 
@@ -152,7 +153,7 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 </ul>
 
 
-2.6 Barrierefreiheit (WCAG)
+### Barrierefreiheit (WCAG)
 
 <ul>
 
@@ -170,47 +171,49 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
 </ul>
 
-3. JavaScript — Code-Erklärungen
+<h2>3. JavaScript — Code-Erklärungen</h2>
 
 
-Zeitbasierte Begrüßung & Typewriter-Effekt
+### Zeitbasierte Begrüßung & Typewriter-Effekt
 
 <p>Mit <code>new Date().getHours()</code> wird die aktuelle Uhrzeit des Nutzers ausgelesen und je nach Tageszeit eine passende Begrüßung gesetzt. Die Bibliothek Typed.js animiert den Text dann Zeichen für Zeichen auf der Startseite.</p>
 
 
-Komponenten-System via fetch()
+### Komponenten-System via fetch()
 
 <p>Header und Footer werden als separate HTML-Dateien ausgelagert und beim Laden der Seite dynamisch via <code>fetch()</code> geladen. Das verhindert doppelten Code und ermöglicht eine zentrale Verwaltung der Navigation.</p>
 
 
-Dark/Light Mode Toggle
+### Dark/Light Mode Toggle
 
 <p>Beim Klick auf den Toggle-Button wird die Klasse <code>light</code> auf dem <code>html</code>-Element ein- oder ausgeschaltet. Die Auswahl wird in <code>localStorage</code> gespeichert, sodass der Modus beim nächsten Besuch erhalten bleibt.</p>
 
 
-Logo-Wechsel via updateLogo()
+### Logo-Wechsel via updateLogo()
 
 <p>Die Funktion <code>updateLogo()</code> prüft ob die Klasse <code>light</code> aktiv ist und tauscht das Logo-Bild automatisch — dunkles Logo für Dark Mode, helles Logo für Light Mode.</p>
 
 
-Hamburger-Menü
+### Hamburger-Menü
 
 <p>Beim Klick auf den Hamburger-Button wird die Klasse <code>active</code> auf Button und Navigation umgeschaltet. Das Attribut <code>aria-expanded</code> wird dabei dynamisch angepasst für bessere Barrierefreiheit.</p>
 
 
-Scroll-Animationen via IntersectionObserver
+### Scroll-Animationen via IntersectionObserver
 
 <p>Der <code>IntersectionObserver</code> erkennt wann ein Element im sichtbaren Bereich erscheint und fügt die Klasse <code>visible</code> hinzu. Mit einer Verzögerung via <code>setTimeout</code> werden die Elemente nacheinander animiert.</p>
 
 
-Back-to-top Button
+### Back-to-top Button
 
 <p>Beim Scrollen wird geprüft ob der Nutzer mehr als 300px nach unten gescrollt hat. Falls ja, erscheint der Button. Per Klick scrollt <code>window.scrollTo()</code> mit <code>behavior: 'smooth'</code> sanft zurück nach oben.</p>
 <hr/>
 
 
-4. Projektstruktur
+<h2>4. Projektstruktur</h2>
 
+...
+/
 ---index.html
 |
 ---about.html
@@ -238,10 +241,11 @@ Back-to-top Button
 |
 ---fonts/
 ---images/
-
+...
 <hr/>
 
-5. Projektorganisation
+
+<h2>5. Projektorganisation</h2>
 
 <ul>
   <li>Versionsverwaltung via <strong>Git & GitHub</strong></li>
@@ -255,7 +259,7 @@ Back-to-top Button
 
 <hr/>
 
-6. Besondere Leistungen
+<h2>6. Besondere Leistungen</h2>
 
 <p>Diese Punkte möchte ich besonders zur Bewertung hervorheben:</p>
 <ul>
@@ -286,9 +290,9 @@ Back-to-top Button
 </ul>
 <hr/>
 
-7. Quellen & Referenzen
+<h2>7. Quellen & Referenzen</h2>
 
-JavaScript & Web APIs
+### JavaScript & Web APIs
 
 <ul>
 
@@ -309,7 +313,7 @@ JavaScript & Web APIs
 
 </ul>
 
-CSS
+### CSS
 
 <ul>
   <li><strong>CSS Custom Properties</strong> — <code>:root</code> und <code>var()</code><br>
@@ -326,7 +330,7 @@ CSS
 
 </ul>
 
-Barrierefreiheit
+### Barrierefreiheit
 
 <ul>
   <li><strong>WCAG 2.1</strong> — Richtlinien für barrierefreies Webdesign<br>
@@ -336,7 +340,7 @@ Barrierefreiheit
   <a href="https://barrierefreies.design">barrierefreies.design</a></li>
 </ul>
 
-Allgemeine Referenzen
+### Allgemeine Referenzen
 
 <ul>
   <li><strong>W3Schools</strong> — HTML, CSS und JavaScript Referenz<br>
