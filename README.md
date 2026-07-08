@@ -241,7 +241,7 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 |
 ---fonts/
 ---images/
-<pre><code>
+</code></pre>
 
 <hr/>
 
