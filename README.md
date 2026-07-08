@@ -212,7 +212,7 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
 <h2>4. Projektstruktur</h2>
 
-...
+<pre><code>
 /
 ---index.html
 |
@@ -241,7 +241,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 |
 ---fonts/
 ---images/
-...
+<pre><code>
+
 <hr/>
 
 
