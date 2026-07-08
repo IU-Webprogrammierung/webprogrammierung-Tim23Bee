@@ -1,4 +1,4 @@
-# Portfolio: Persönlicher Webauftritt (DLBUXPWP01)
+### Portfolio: Persönlicher Webauftritt (DLBUXPWP01)
 
 <p>Dieses Projekt entsteht als Prüfungsleistung im Rahmen des Kurses <strong>Projekt: Web-Programmierung (DLBUXPWP01)</strong> an der IU Internationalen Hochschule. Es handelt sich um eine digitale Visitenkarte und ein persönliches Portfolio zur beruflichen und privaten Repräsentation.</p>
 
@@ -6,16 +6,30 @@
     <li><strong>Studierender:</strong> Timotheus Beirer</li>
     <li><strong>Matrikelnummer:</strong> 3210997</li>
     <li><strong>Tutoren:</strong> Jurek Breuninger & Oliver Herrmann</li>
-    <li><strong>Abgabedatum:</strong> 01.06.2026</li>
+    <li><strong>Abgabedatum:</strong> 27.07.2026</li>
 </ul>
 
 <hr/>
 
-## Konzept & Zielsetzung
-<p>Ziel des Projekts ist die Erstellung einer minimalistischen Visitenkarte. Die Website dient als zentrale Plattform, um Qualifikationen und Interessen kompakt zu präsentieren..</p>
 
-### Struktur & Seitenumfang
-<p>Das Portfolio ist als mehrseitiger Webauftritt konzipiert und umfasst eine Hauptseite sowie vier themenspezifische Unterseiten und eine 404 Seite. Ziel ist es auch nocht im weiteresn Verlauf des Projektes eventuell 2 weitere Seiten hinzuzufügen. Im Moment bleibt es bei vier Unterseiten plus der Hauptseite und 404-Seite, da der Fokus noch auf den Hauptkriterien der Aufgabenstellung liegt, anstatt inhaltlich auszuschweifen. Der Header beinhaltet das Logo sowie eine konsistente Navigationsleiste zur einfachen Orientierung.</p>
+1. Konzept & Zielsetzung
+
+<p>Ziel des Projekts ist die Erstellung einer minimalistischen digitalen Visitenkarte. Die Website dient als zentrale Plattform, um Qualifikationen und Interessen kompakt zu präsentieren. Das Portfolio umfasst eine Hauptseite sowie vier themenspezifische Unterseiten, eine Curriculum Seite und eine 404 Seite.</p>
+
+
+### Wireframes & Mockups
+<ul>
+
+  <li><strong>Papierskizzen</strong> — Low-Fidelity Entwürfe für Desktop Tablet und Mobile</li>
+
+  <li><strong>Wireframes</strong> — Digitale Umsetzung in Figma für alle Breakpoints</li>
+
+  <li><strong>Mockups</strong> — Visuelle Darstellung des finalen Designs in Figma (Desktop, Tablet, Mobile)</li>
+
+  <li><strong>Annotationen</strong> — Beschreibungen einzelner UI-Elemente wie Navigation, Buttons und Layout-Bereiche</li>
+
+</ul>
+
 
 ### Seiten
 
@@ -24,6 +38,8 @@
    <li><strong>indes.html:</strong> Ciao-Bereich, Begrüßung, Name und persönliches Foto.</li>
     
    <li><strong>about.html:</strong> Persönliche Vorstellung und Standort (der Weg vom Koch zum UX-Designer).</li>
+
+   <li><strong>curriculum.html</strong> — Vollständiger Lebenslauf mit Dark/Light Mode</li>
     
    <li><strong>interessen.html:</strong> Einblicke in persönliche Antreiber wie Kreativität, Musik und Kochen.</li>
 
@@ -38,9 +54,9 @@
 
 <ul>
 
-<h2>Technische Umsetzung & Features</h2>
+<h2>2. Technische Umsetzung & Features</h2>
 
-<h3>1. HTML & CSS Architektur</h3>
+<h3>2.1 HTML & CSS Architektur</h3>
 
 <ul>
 
@@ -48,9 +64,15 @@
 
   <li><strong>CSS3</strong> — Flexbox & CSS Grid für Layout, Media Queries für Responsive Design</li>
 
+  <li><strong>Responsivität</strong> — Optimierung für Endgeräte von 360px bis 1920px</li>
+
   <li><strong>Zwei Breakpoints</strong> — <code>767px</code> (Mobile) und <code>1024px</code> (Tablet)</li>
 
   <li><strong>Dark / Light Mode</strong> — via <code>html.light</code> Klasse, gespeichert in <code>localStorage</code></li>
+
+  <li><strong>CSS-Variablen</strong> — Farben zentral definiert via <code>:root</code> und <code>var()</code></li>
+
+  <li><strong>CSS Nesting</strong> — Interessen-Seite refaktoriert für bessere Lesbarkeit</li>
 
   <li><strong>Komponenten-System</strong> — Header & Footer als separate Dateien, dynamisch via <code>fetch()</code> geladen</li>
 
@@ -58,17 +80,42 @@
 
   <li><strong>CSS-Kommentare</strong> — strukturierte Kommentierung aller Sektionen</li>
 
-  <li><strong>CSS-Variablen</strong> — Farben zentral definiert via <code>:root</code> und <code>var()</code></li>
+  <li><strong>Favicon</strong> — individuelles Icon im Browser-Tab</li>
 
-  <li><strong>Meta Description</strong> — SEO-Optimierung auf allen Seiten via <code>&lt;meta name="description"&gt;</code></li>
-
-  <li><strong>CSS Nesting</strong> — Interessen-Seite als Beispiel für modernes CSS Nesting</li>
-
+  <li><strong>Meta Description</strong> — SEO-Optimierung auf allen Seiten</li>
 
 </ul>
 
 
-### Interaktivität (JavaScript)
+2.2 Typografie
+
+<ul>
+  <li><strong>Urbanist</strong> — für alle Überschriften (H1–H6), modernes und markantes Profil</li>
+
+  <li><strong>Inter</strong> — für Fließtext, hervorragende Lesbarkeit</li>
+
+  <li>Schriftgrößen responsiv: Desktop 20px / Tablet 18px / Mobile 16px</li>
+
+
+2.3 Farbkonzept
+
+<ul>
+
+Rolle                   Dark Mode.            Light Mode
+
+Hintergrund             #0F0F1B             #D7D7D7
+
+Primärer Text.          #F1F1F3             #0F0F1B
+
+Überschriften & Hover.  #D0C3F4             #5024BD
+
+CTA-Buttons & Akzente.  #FFC224             #FFC224
+
+</ul>
+
+
+2.4 Interaktivität (JavaScript)
+
 <ul>
 
 <li><strong>**Dark/Light Mode Toggle** — wechselt Farbschema und speichert Auswahl in `localStorage`</li>
@@ -85,16 +132,28 @@
 
 </ul>
 
-### Wireframes & Mockups
+
+2.5 Micro-Animationen
 
 <ul>
-  <li><strong>Papierskizzen</strong> — Low-Fidelity Entwürfe für Desktop, Tablet und Mobile</li>
-  <li><strong>Wireframes</strong> — Digitale Umsetzung in Figma für alle Breakpoints</li>
-  <li><strong>Mockups</strong> — Visuelle Darstellung des finalen Designs in Figma (Desktop, Tablet, Mobile)</li>
-  <li><strong>Annotationen</strong> — Als zusätzliche Ergänzung wurden im Konzept Annotationen zu den Wireframes hinzugefügt, die einzelne UI-Elemente wie Navigation, Buttons und Layout-Bereiche gezielt beschreiben und deren Funktion erläutern.</li>
+
+  <li><strong>Interessen-Boxen</strong> — fliegen beim Scrollen von links rein via <code>IntersectionObserver</code></li>
+
+  <li><strong>Projekt-Einträge</strong> — blenden beim Scrollen sanft ein</li>
+
+  <li><strong>Kontakt-Icons</strong> — bewegen sich beim Hover nach oben</li>
+
+  <li><strong>Curriculum-Einträge</strong> — heben sich beim Hover nach oben</li>
+
+  <li><strong>Bewegender Punkt</strong> — animierter CSS Punkt auf der Kontakt-Seite, führt zur 404-Seite</li>
+
+  <li><strong>Logo-Animation</strong> — skaliert und rotiert beim Hover</li>
+
 </ul>
 
-### Barrierefreiheit (WCAG)
+
+2.6 Barrierefreiheit (WCAG)
+
 <ul>
 
 <li><strong>`aria-label` auf Navigation, Buttons und Links</li>
@@ -111,47 +170,187 @@
 
 </ul>
 
+3. JavaScript — Code-Erklärungen
 
-### Farbkonzept
+
+Zeitbasierte Begrüßung & Typewriter-Effekt
+
+<p>Mit <code>new Date().getHours()</code> wird die aktuelle Uhrzeit des Nutzers ausgelesen und je nach Tageszeit eine passende Begrüßung gesetzt. Die Bibliothek Typed.js animiert den Text dann Zeichen für Zeichen auf der Startseite.</p>
+
+
+Komponenten-System via fetch()
+
+<p>Header und Footer werden als separate HTML-Dateien ausgelagert und beim Laden der Seite dynamisch via <code>fetch()</code> geladen. Das verhindert doppelten Code und ermöglicht eine zentrale Verwaltung der Navigation.</p>
+
+
+Dark/Light Mode Toggle
+
+<p>Beim Klick auf den Toggle-Button wird die Klasse <code>light</code> auf dem <code>html</code>-Element ein- oder ausgeschaltet. Die Auswahl wird in <code>localStorage</code> gespeichert, sodass der Modus beim nächsten Besuch erhalten bleibt.</p>
+
+
+Logo-Wechsel via updateLogo()
+
+<p>Die Funktion <code>updateLogo()</code> prüft ob die Klasse <code>light</code> aktiv ist und tauscht das Logo-Bild automatisch — dunkles Logo für Dark Mode, helles Logo für Light Mode.</p>
+
+
+Hamburger-Menü
+
+<p>Beim Klick auf den Hamburger-Button wird die Klasse <code>active</code> auf Button und Navigation umgeschaltet. Das Attribut <code>aria-expanded</code> wird dabei dynamisch angepasst für bessere Barrierefreiheit.</p>
+
+
+Scroll-Animationen via IntersectionObserver
+
+<p>Der <code>IntersectionObserver</code> erkennt wann ein Element im sichtbaren Bereich erscheint und fügt die Klasse <code>visible</code> hinzu. Mit einer Verzögerung via <code>setTimeout</code> werden die Elemente nacheinander animiert.</p>
+
+
+Back-to-top Button
+
+<p>Beim Scrollen wird geprüft ob der Nutzer mehr als 300px nach unten gescrollt hat. Falls ja, erscheint der Button. Per Klick scrollt <code>window.scrollTo()</code> mit <code>behavior: 'smooth'</code> sanft zurück nach oben.</p>
+<hr/>
+
+
+4. Projektstruktur
+
+---index.html
+|
+---about.html
+|
+---interessen.html
+|
+---projekt.html
+|
+---kontakt.html
+|
+---curriculum.html
+|
+---404.html
+|
+---css/
+    |____style.css
+    |____fonts.css
+|
+---js/
+    |____script.js
+|
+---components/
+    |____header.html
+    |____footer.html
+|
+---fonts/
+---images/
+
+<hr/>
+
+5. Projektorganisation
+
+<ul>
+  <li>Versionsverwaltung via <strong>Git & GitHub</strong></li>
+
+  <li>60+ Commits mit konventionellen Commit-Messages</li>
+
+  <li>Git Tags für alle 3 Projektphasen (<code>phase-1</code>, <code>phase-2</code>, <code>phase-3</code>)</li>
+
+  <li>Kontinuierliche Weiterentwicklung über alle drei Projektphasen</li>
+</ul>
+
+<hr/>
+
+6. Besondere Leistungen
+
+<p>Diese Punkte möchte ich besonders zur Bewertung hervorheben:</p>
+<ul>
+  <li><strong>Dark / Light Mode</strong> — vollständig implementiert mit <code>localStorage</code> und automatischem Logo-Wechsel via <code>updateLogo()</code></li>
+
+  <li><strong>Komponenten System</strong> — Header & Footer dynamisch via <code>fetch()</code> geladen, saubere Trennung von Inhalt und Struktur</li>
+
+  <li><strong>CSS Variablen</strong> — alle Farben zentral in <code>:root</code> definiert, konsistente Verwendung via <code>var()</code></li>
+
+  <li><strong>CSS Nesting</strong> — Nur mit dem Interessen-Seite Code Block als Beispiel für modernes CSS Refactoring, da diese Arbeit viel Zeit in Anspruch genommen hat</li>
+
+  <li><strong>Barrierefreiheit</strong> — Lighthouse Accessibility Score: 100/100, WCAG AA/AAA konform</li>
+
+  <li><strong>Scroll Animationen</strong> — Interessen-Boxen und Projekt-Einträge via <code>IntersectionObserver</code></li>
+
+  <li><strong>Curriculum Seite</strong> — vollständiger Lebenslauf als eigene HTML-Seite mit Dark/Light Mode</li>
+
+  <li><strong>Back-to-top Button</strong> — erscheint beim Scrollen, nur auf Desktop & Tablet sichtbar</li>
+
+  <li><strong>404 Seite</strong> — individuelle Work-in-Progress Seite mit animiertem CSS Punkt</li>
+
+  <li><strong>Favicon</strong> — individuelles Icon im Browser-Tab, Logo erstellt mit Figma</li>
+
+  <li><strong>Typewriter Effekt</strong> — zeitbasierte Begrüßung via Typed.js</li>
+ 
+  <li><strong>Kontakt Seite</strong> - Social Media Logos gehn hoch beim hovern</li>
+
+</ul>
+<hr/>
+
+7. Quellen & Referenzen
+
+JavaScript & Web APIs
 
 <ul>
 
-Rolle                   Dark Mode.            Light Mode
+  <li><strong>IntersectionObserver</strong> — Scroll-Animationen<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">MDN — Intersection Observer API</a></li>
 
-Hintergrund             #0F0F1B             #D7D7D7
+  <li><strong>fetch()</strong> — Dynamisches Laden von Komponenten<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">MDN — Fetch API</a></li>
 
-Primärer Text.          #F1F1F3             #0F0F1B
+  <li><strong>localStorage</strong> — Speicherung des Dark/Light Mode<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">MDN — localStorage</a></li>
 
-Überschriften & Hover.  #D0C3F4             #5024BD
+  <li><strong>window.scrollTo()</strong> — Back-to-top Button<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo">MDN — Window.scrollTo()</a></li>
 
-CTA-Buttons & Akzente.  #FFC224             #FFC224
+  <li><strong>Typed.js</strong> — Typewriter-Effekt<br>
+  <a href="https://mattboldt.github.io/typed.js/">Typed.js Dokumentation</a></li>
 
 </ul>
 
-<hr />
+CSS
 
-### Typografie
-
-
-<p> <ul>
-  <li><strong>Urbanist</strong> — für alle Überschriften (H1–H6), modernes und markantes Profil</li>
-  <li><strong>Inter</strong> — für Fließtext, hervorragende Lesbarkeit</li>
-  <li>Schriftgrößen responsiv je nach Gerät: Desktop 20px Body / Tablet 18px / Mobile 16px</li>
-</ul> 
-</p>
-
-
-### Projektorganisation
 <ul>
+  <li><strong>CSS Custom Properties</strong> — <code>:root</code> und <code>var()</code><br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">MDN — CSS Custom Properties</a></li>
 
-- Versionsverwaltung via **Git & GitHub**
+  <li><strong>CSS Nesting</strong> — modernes CSS Refactoring<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting">MDN — CSS Nesting</a></li>
 
-- Regelmäßige Commits mit beschreibenden Commit-Messages
+  <li><strong>@keyframes</strong> — CSS Animationen<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes">MDN — @keyframes</a></li>
 
-- Kontinuierliche Weiterentwicklung über alle drei Projektphasen
+  <li><strong>@media (hover: hover)</strong> — Hover nur auf Desktop<br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover">MDN — hover Media Feature</a></li>
 
 </ul>
 
-<p>Die gesamte Versionsverwaltung, Protokollierung des Entwicklungsfortschritts und die Bereitstellung der Live-Vorschau erfolgen kontinuierlich über Git und GitHub.</p>
+Barrierefreiheit
 
-<p><h1>Im Laufe des Projekts können Änderungen vorgenommen werden!</h1></p>
+<ul>
+  <li><strong>WCAG 2.1</strong> — Richtlinien für barrierefreies Webdesign<br>
+  <a href="https://www.w3.org/WAI/WCAG21/quickref/">W3C — WCAG 2.1 Quick Reference</a></li>
+
+  <li><strong>Kontrast-Test</strong><br>
+  <a href="https://barrierefreies.design">barrierefreies.design</a></li>
+</ul>
+
+Allgemeine Referenzen
+
+<ul>
+  <li><strong>W3Schools</strong> — HTML, CSS und JavaScript Referenz<br>
+  <a href="https://www.w3schools.com/">w3schools.com</a></li>
+
+  <li><strong>MDN Web Docs</strong> — Technische Dokumentation<br>
+  <a href="https://developer.mozilla.org/">developer.mozilla.org</a></li>
+
+</ul>
+<hr/>
+
+<blockquote>Im Laufe des Projekts können Änderungen vorgenommen werden.</blockquote>
+<p>© 2026 Timotheus Beirer</p>
+
+</ul>
+
+

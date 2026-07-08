@@ -25,6 +25,8 @@ if (document.getElementById('greeting-typewriter')) {
 }
 
 
+
+
 // =============================================== //
 // /komponenten header und footer laden //  
 
@@ -46,7 +48,8 @@ async function loadComponents(selector, path) {
 }
 
 
-// ====================================================//
+
+
 // Interaktivität: Dark/Light Mode Toggle
 //====================================================//
 
@@ -76,7 +79,9 @@ function initThemeToggle() {
 
 }
 
-// ====================================================//
+
+
+
 // Logo wechseln je nach Modus
 //====================================================//
 
@@ -89,7 +94,7 @@ function updateLogo() {
 
 
 
-// ====================================================//
+
 // Interaktivität: Hamburger-Menü öffnen und schließen
 //====================================================//
 
@@ -112,7 +117,7 @@ function initHamburgerMenu() {
 
 
 
-    // ====================================================//
+    
     // Interaktivität: Scroll Animation Interessen-Boxen
     //====================================================//
 
@@ -130,48 +135,45 @@ function initHamburgerMenu() {
         beobachter.observe(box);
     });
 
+
+
     
-// ====================================================//
-// Scroll Animation Projekt-Einträge
-//====================================================//
+    // Scroll Animation Projekt-Einträge
+    //====================================================//
 
-const projektBeobachter = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-            setTimeout(() => {
-                entry.target.classList.add('visible');
-            }, index * 200);
-        }
+    const projektBeobachter = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 200);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.projekt-eintrag').forEach(eintrag => {
+        projektBeobachter.observe(eintrag);
     });
-}, { threshold: 0.1 });
 
-document.querySelectorAll('.projekt-eintrag').forEach(eintrag => {
-    projektBeobachter.observe(eintrag);
-});
- 
-// ====================================================//
-// Back to Top Button
-//====================================================//
 
-const backToTop = document.getElementById('back-to-top');
 
-if (backToTop) {
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
+    
+    // Back to Top Button
+    //====================================================//
+
+    const backToTop = document.getElementById('back-to-top');
+
+    if (backToTop) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
         });
 
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-}
-
-
-
-
-
-
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 }
