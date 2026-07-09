@@ -303,9 +303,6 @@ footer small {
 
 
 
-
-
-
 /* ================================== */
 /*          About Seite               */
 /* ================================== */
@@ -446,15 +443,15 @@ main {
 
 #cv-intro {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 #cv-intro h1 {
     font-family: "Urbanist", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 800;
     color: var(--lila);
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
     letter-spacing: 3px;
     white-space: normal;
 }
@@ -494,7 +491,7 @@ main {
 #cv-erfahrung h3,
 #cv-ausbildung h3 {
     font-family: "Urbanist", sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--gold);
     letter-spacing: 3px;
@@ -505,7 +502,7 @@ main {
 }
 
 #cv-profil p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
     color: var(--text-dark);
 }
@@ -514,7 +511,7 @@ main {
 
 #cv-erfahrung,
 #cv-ausbildung {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto 60px auto;
 }
 
@@ -533,9 +530,9 @@ main {
 .cv-eintrag {
     display: grid;
     grid-template-columns: 160px 1fr;
-    gap: 20px;
+    gap: 500px;
     align-items: start;
-    padding: 20px 0;
+    padding: 25px 0;
     border-bottom: 1px solid var(--bg-light)
 }
 
@@ -545,10 +542,11 @@ main {
 
 .cv-zeit {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--lila);
-    padding-top: 3px;
+    padding-top: 15px;
+    text-align: left;
 }
 
 .cv-details {
@@ -559,15 +557,15 @@ main {
 
 .cv-details strong {
     font-family: "Urbanist", sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--text-dark);
 }
 
 .cv-ort {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
-    color: rgba(241, 241, 243, 0.5);
+    font-size: 19px;
+    color : #FFC224;
 }
 
 
@@ -594,8 +592,8 @@ main {
 
 #back-to-top {
     position: fixed;
-    bottom: 169px;
-    right: 400px;
+    bottom: 164px;
+    right: 200px;
     transform: none;
     width: 50px;
     height: 50px;
@@ -806,7 +804,71 @@ main {
 
 
 
+/* ============================== */
+/* 404-Seite                       */
+/* ============================== */
 
+body.page-404 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body.page-404 #ueber-mich-intro {
+    animation: fadeInUp 3s ease forwards, glitch 1s steps(1) infinite;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glitch {
+    0%, 92%, 100% {
+        transform: translate(0, 0);
+        text-shadow: none;
+        filter: blur(0px);
+    }
+    93% {
+        transform: translate(-3px, 1px);
+        text-shadow: 2px 0 var(--lila), -2px 0 var(--gold);
+        filter: blur(1.5px);
+    }
+    94% {
+        transform: translate(3px, -1px);
+        text-shadow: -2px 0 var(--lila), 2px 0 var(--gold);
+        filter: blur(2px);
+    }
+    95% {
+        transform: translate(-2px, 0);
+        text-shadow: 1px 0 var(--lila), -1px 0 var(--gold);
+        filter: blur(1px);
+    }
+    96% {
+        transform: translate(2px, 1px);
+        text-shadow: none;
+        filter: blur(1.5px);
+    }
+    97% {
+        transform: translate(0, -2px);
+        text-shadow: -1px 0 var(--gold);
+        filter: blur(0.5px);
+    }
+    98%, 99% {
+        transform: translate(0, 0);
+        text-shadow: none;
+        filter: blur(0px);
+    }
+}
 
 
 /* ============================== */
@@ -920,11 +982,6 @@ main {
 #kontakt-liste li:first-child {
     margin-bottom: 110px
 }
-
-
-
-
-
 
 
 
@@ -1466,6 +1523,8 @@ html.light #ziel {
     /* <-- css variable#55 */
 }
 
+
+
 /* Light Mode Curriculum */
 
 html.light #cv-intro h2 {
@@ -1481,11 +1540,11 @@ html.light .cv-details strong {
 }
 
 html.light .cv-ort {
-    color: rgba(15, 15, 27, 0.5);
+    color: var(--bg-dark);
 }
 
 html.light .cv-eintrag {
-    border-bottom: 1px solid var(--lila-dark)
+    border-bottom: 2px solid var(--lila-dark)
 }
 
 html.light .cv-zeit {
@@ -1511,6 +1570,11 @@ html.light #back-to-top {
     background-color: var(--lila-dark);
     color: #ffffff;
 }
+
+html.light .cv-eintrag--highlight {
+    border-color: var(--lila-dark);
+}
+
 
 /* Interessen-Seite */
 

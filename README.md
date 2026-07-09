@@ -288,6 +288,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
  
   <li><strong>Kontakt Seite</strong> - Social Media Logos gehn hoch beim hovern</li>
 
+  <li><strong>404-Seite</strong> — individuelle Work-in-Progress Seite mit animiertem CSS Punkt und Glitch-Effekt auf dem Titel</li>
+
 </ul>
 <hr/>
 
