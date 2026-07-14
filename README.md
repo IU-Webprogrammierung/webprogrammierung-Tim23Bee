@@ -266,8 +266,6 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 <ul>
   <li><strong>Dark / Light Mode</strong> — vollständig implementiert mit <code>localStorage</code> und automatischem Logo-Wechsel via <code>updateLogo()</code></li>
 
-  <li><strong>Komponenten System</strong> — Header & Footer dynamisch via <code>fetch()</code> geladen, saubere Trennung von Inhalt und Struktur</li>
-
   <li><strong>CSS Variablen</strong> — alle Farben zentral in <code>:root</code> definiert, konsistente Verwendung via <code>var()</code></li>
 
   <li><strong>CSS Nesting</strong> — Nur mit dem Interessen-Seite Code Block als Beispiel für modernes CSS Refactoring, da diese Arbeit viel Zeit in Anspruch genommen hat</li>
@@ -279,8 +277,6 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
   <li><strong>Curriculum Seite</strong> — vollständiger Lebenslauf als eigene HTML-Seite mit Dark/Light Mode</li>
 
   <li><strong>Back-to-top Button</strong> — erscheint beim Scrollen, nur auf Desktop & Tablet sichtbar</li>
-
-  <li><strong>404 Seite</strong> — individuelle Work-in-Progress Seite mit animiertem CSS Punkt</li>
 
   <li><strong>Favicon</strong> — individuelles Icon im Browser-Tab, Logo erstellt mit Figma</li>
 
@@ -294,6 +290,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 <hr/>
 
 <h2>7. Quellen & Referenzen</h2>
+
+
 
 ### JavaScript & Web APIs
 
@@ -316,6 +314,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
 </ul>
 
+
+
 ### CSS
 
 <ul>
@@ -333,6 +333,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
 </ul>
 
+
+
 ### Barrierefreiheit
 
 <ul>
@@ -342,6 +344,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
   <li><strong>Kontrast-Test</strong><br>
   <a href="https://barrierefreies.design">barrierefreies.design</a></li>
 </ul>
+
+
 
 ### Allgemeine Referenzen
 

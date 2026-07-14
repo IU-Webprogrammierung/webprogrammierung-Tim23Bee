@@ -54,6 +54,15 @@ header {
     /* <-- css variable#3 */
 }
 
+.navbar a.active::after {
+    width: calc(100% - 38px);
+    background-color: var(--lila);
+}
+
+html.light .navbar a.active::after {
+    background-color: var(--lila-dark);
+}
+
 
 /* Logo-Animation */
 
