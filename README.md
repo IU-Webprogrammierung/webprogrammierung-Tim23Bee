@@ -209,6 +209,11 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 <p>Beim Scrollen wird geprüft ob der Nutzer mehr als 300px nach unten gescrollt hat. Falls ja, erscheint der Button. Per Klick scrollt <code>window.scrollTo()</code> mit <code>behavior: 'smooth'</code> sanft zurück nach oben.</p>
 <hr/>
 
+### Navigation Aktiv auf aktueller Seite
+
+<li><strong>Aktiver Navigationslink</strong> — die aktuelle Seite wird in der Navbar automatisch via <code>setActiveNavLink()</code> hervorgehoben und unterstrichen</li>
+
+
 
 <h2>4. Projektstruktur</h2>
 
@@ -285,6 +290,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
   <li><strong>Kontakt Seite</strong> - Social Media Logos gehn hoch beim hovern</li>
 
   <li><strong>404-Seite</strong> — individuelle Work-in-Progress Seite mit animiertem CSS Punkt und Glitch-Effekt auf dem Titel</li>
+
+  <li><strong>Aktiver Navigationslink</strong> — <code>setActiveNavLink()</code> erkennt automatisch welche Seite aktiv ist und hebt den entsprechenden Link hervor</li>
 
 </ul>
 <hr/>
