@@ -309,7 +309,17 @@ footer small {
     margin-top: 0;
 }
 
+.home-page body {
+    overflow: hidden !important;
+    height: 100vh;
+    max-height: 100vh;
+}
 
+.home-page footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 
 /* ================================== */
