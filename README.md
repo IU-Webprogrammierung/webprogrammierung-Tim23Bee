@@ -150,6 +150,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
   <li><strong>Logo-Animation</strong> — skaliert und rotiert beim Hover</li>
 
+  <li><strong>Projekt-Einträge Hover</strong> — Projekteinträge heben sich beim Hover auf Desktop nach oben</li>
+
 </ul>
 
 

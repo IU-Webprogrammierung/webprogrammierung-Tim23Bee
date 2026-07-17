@@ -194,3 +194,62 @@ function setActiveNavLink() {
         }
     });
 }
+
+
+
+// ====================================================//
+// Cursor Linie
+//====================================================//
+
+const canvas = document.getElementById('cursor-canvas');
+if (canvas) {
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const points = [];
+    let mouseX = 0;
+    let mouseY = 0;
+
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        points.push({ 
+            x: mouseX + (Math.random() - 0.5) * 8, 
+            y: mouseY + (Math.random() - 0.5) * 8,
+            age: 0 
+        });
+    });
+
+    function drawTrail() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        points.forEach(point => point.age++);
+        
+        const alive = points.filter(p => p.age < 40);
+        points.length = 0;
+        points.push(...alive);
+
+        if (points.length > 1) {
+            ctx.beginPath();
+            ctx.moveTo(points[0].x, points[0].y);
+            
+            for (let i = 1; i < points.length; i++) {
+                const opacity = 1 - points[i].age / 40;
+                ctx.strokeStyle = `rgba(208, 195, 244, ${opacity})`;
+                ctx.lineWidth = 2;
+                ctx.lineTo(points[i].x, points[i].y);
+            }
+            ctx.stroke();
+        }
+
+        requestAnimationFrame(drawTrail);
+    }
+
+    drawTrail();
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+}
