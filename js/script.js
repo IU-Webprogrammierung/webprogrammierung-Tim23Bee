@@ -118,7 +118,7 @@ function initHamburgerMenu() {
 
 
 
-    
+
     // Interaktivität: Scroll Animation Interessen-Boxen
     //====================================================//
 
@@ -138,7 +138,7 @@ function initHamburgerMenu() {
 
 
 
-    
+
     // Scroll Animation Projekt-Einträge
     //====================================================//
 
@@ -158,7 +158,7 @@ function initHamburgerMenu() {
 
 
 
-    
+
     // Back to Top Button
     //====================================================//
 
@@ -180,13 +180,13 @@ function initHamburgerMenu() {
 }
 
 
- // Makierung des aktiven Navigationslinks
-    //====================================================//
+// Makierung des aktiven Navigationslinks
+//====================================================//
 
 function setActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.navbar a');
-    
+
     navLinks.forEach(link => {
         const linkPage = link.getAttribute('href');
         if (linkPage === currentPage) {
@@ -214,29 +214,31 @@ if (canvas) {
     window.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
-        points.push({ 
-            x: mouseX + (Math.random() - 0.5) * 8, 
-            y: mouseY + (Math.random() - 0.5) * 8,
-            age: 0 
+        points.push({
+            x: mouseX + (Math.random() - 0.5) * 2,
+            y: mouseY + (Math.random() - 0.5) * 2,
+            age: 0
         });
     });
 
     function drawTrail() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
+
         points.forEach(point => point.age++);
-        
-        const alive = points.filter(p => p.age < 40);
+
+        const alive = points.filter(p => p.age < 10);
         points.length = 0;
         points.push(...alive);
 
         if (points.length > 1) {
             ctx.beginPath();
             ctx.moveTo(points[0].x, points[0].y);
-            
+
             for (let i = 1; i < points.length; i++) {
-                const opacity = 1 - points[i].age / 40;
-                ctx.strokeStyle = `rgba(208, 195, 244, ${opacity})`;
+                const opacity = 1 - points[i].age / 10;
+                const isLight = document.documentElement.classList.contains('light');
+                const lineColor = isLight ? '15, 15, 27' : '208, 195, 244';
+                ctx.strokeStyle = `rgba(${lineColor}, ${opacity})`;
                 ctx.lineWidth = 2;
                 ctx.lineTo(points[i].x, points[i].y);
             }
