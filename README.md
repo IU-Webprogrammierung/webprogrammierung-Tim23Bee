@@ -131,6 +131,7 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
 <li><strong>**Hamburger-Menü** — öffnet/schließt mobile Navigation mit `aria-expanded`</li>
 
+
 </ul>
 
 
@@ -151,6 +152,9 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
   <li><strong>Logo-Animation</strong> — skaliert und rotiert beim Hover</li>
 
   <li><strong>Projekt-Einträge Hover</strong> — Projekteinträge heben sich beim Hover auf Desktop nach oben</li>
+
+  <li><strong>Custom Cursor Linie</strong> — betrunkene Linie folgt dem Mauszeiger via Canvas API, wechselt Farbe je nach Dark/Light Mode</li>
+
 
 </ul>
 
@@ -215,6 +219,10 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
 <li><strong>Aktiver Navigationslink</strong> — die aktuelle Seite wird in der Navbar automatisch via <code>setActiveNavLink()</code> hervorgehoben und unterstrichen</li>
 
+### Cursor Linie mit Canvas
+
+<h3>Custom Cursor Linie via Canvas</h3>
+<p>Ein <code>&lt;canvas&gt;</code> Element überlagert die gesamte Seite. Bei jeder Mausbewegung werden Punkte gespeichert und als Linie gezeichnet via <code>ctx.strokeStyle</code>. Mit <code>requestAnimationFrame</code> wird die Linie kontinuierlich neu gezeichnet und ältere Punkte verblassen automatisch. Die Linienfarbe wechselt automatisch je nach Dark/Light Mode.</p>
 
 
 <h2>4. Projektstruktur</h2>
@@ -320,6 +328,9 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 
   <li><strong>Typed.js</strong> — Typewriter-Effekt<br>
   <a href="https://mattboldt.github.io/typed.js/">Typed.js Dokumentation</a></li>
+
+  <li><strong>Canvas API & requestAnimationFrame</strong> — Custom Cursor Linie<br>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">MDN — Canvas API</a></li>
 
 </ul>
 
