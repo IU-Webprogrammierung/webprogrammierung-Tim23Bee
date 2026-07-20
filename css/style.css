@@ -203,11 +203,6 @@ html.light .navbar a.active::after {
     display: inline;
 }
 
-.typed-cursor {
-    white-space: nowrap;
-    display: inline;
-}
-
 h1 {
     white-space: nowrap
 }
@@ -241,7 +236,8 @@ h1 {
     display: block;
 }
 
-/*Button-1-Projekt & Effekt*/
+
+/* Button-1-Projekt & Effekt*/
 
 .cta-container {
     display: flex;
@@ -320,6 +316,7 @@ footer small {
     bottom: 0;
     width: 100%;
 }
+
 
 
 /* ================================== */
@@ -1024,10 +1021,6 @@ html.light .hamburger span {
 }
 
 
-
-
-
-
 /* ==============*/
 /* BREAKPOINTS   */
 /* ==============*/
@@ -1312,6 +1305,7 @@ html.light .hamburger span {
 @media (hover: hover) {
 
     /* Dark Mode */
+
     .logo img:hover {
         transform: scale(1.07) rotate(3deg);
     }

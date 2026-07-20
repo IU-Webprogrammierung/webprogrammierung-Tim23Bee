@@ -306,9 +306,8 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 </ul>
 <hr/>
 
+
 <h2>7. Quellen & Referenzen</h2>
-
-
 
 ### JavaScript & Web APIs
 
@@ -379,7 +378,7 @@ CTA-Buttons & Akzente.  #FFC224             #FFC224
 </ul>
 <hr/>
 
-<blockquote>Im Laufe des Projekts können Änderungen vorgenommen werden.</blockquote>
+
 <p>© 2026 Timotheus Beirer</p>
 
 </ul>
