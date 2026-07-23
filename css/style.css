@@ -307,8 +307,6 @@ footer small {
 
 .home-page body {
     overflow: hidden !important;
-    height: 100vh;
-    max-height: 100vh;
 }
 
 .home-page footer {
