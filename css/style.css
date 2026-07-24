@@ -305,6 +305,7 @@ footer small {
     margin-top: 0;
 }
 
+.home-page,
 .home-page body {
     overflow: hidden !important;
 }
@@ -1046,6 +1047,20 @@ html.light .hamburger span {
 
     #fakten {
         gap: 40px;
+    }
+}
+
+@media (max-height: 820px) and (orientation: landscape) {
+    #hero-section {
+        gap: 60px;
+    }
+
+    .hero-image-card {
+        max-width: 260px;
+    }
+
+    .typewriter {
+        font-size: 50px;
     }
 }
 
